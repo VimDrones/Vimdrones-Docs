@@ -1,0 +1,5 @@
+site_name: Vimdrones Docs 
+theme: readthedocs
+nav:
+    - Home: index.md
+    - Create Drone Team: create-team.md
