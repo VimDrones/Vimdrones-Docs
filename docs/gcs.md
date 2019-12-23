@@ -1,10 +1,8 @@
 ## Installation
 Install Vimdrones GCS on your computer, Mac OS or Windows
 
-## Before Run GCS
-* Setup Base
-* Power on radio transmiter, wifi router
-* Put the drones in place
+## System Requiremnt
+* For details please visit [Drone Show Setup](/setup).
 
 ## Run GCS
 1. Base Enter, click **Survey In** button 
