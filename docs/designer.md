@@ -49,15 +49,15 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 #### Create Drones Vertex Group
 * Select the Mesh Object(E.g **Cube**),change **Object Mode** to **Edit Mode**
 * In the **Properties** Editor, click **Object Date** tab, click the button "+" on the right Panel border to add a Vertex Group, double-click the "Group" name and edit to "drones"
-* Select the Vertexs of the Mesh Object (one vertex represents one drone), click **Assign** button below the Panel<br> 
+* Select the vertices of the Mesh Object (one vertex represents one drone), click **Assign** button below the Panel<br> 
 ![Vimdrones Desiginer Add Vertex Group](/static/vertex-edit.jpg "Vimdrones Desiginer Add Vertex Group")
-    * We could use the tools on the left to edit the vertexs. Or from the Menu Bar **[Vertex](https://docs.blender.org/manual/en/2.81/modeling/meshes/editing/vertices.html#)** to edit the vertexs. <br> 
-    Add the vertexs:[Loop Cut](https://docs.blender.org/manual/en/2.81/modeling/meshes/editing/subdividing/loop.html#tool-mesh-loop-cut) is a very useful tool.<br> 
-    Delete the vertexs: Selcet the vetrexs, press **X** key to Delete or [Dissolve the vertexs](https://docs.blender.org/manual/en/2.81/modeling/meshes/editing/basics/deleting.html?highlight=delete%20vertex).
+    * We could use the tools on the left to edit the vertices. Or from the Menu Bar **[Vertex](https://docs.blender.org/manual/en/2.81/modeling/meshes/editing/vertices.html#)** to edit the vertices. <br> 
+    Add the vertices:[Loop Cut](https://docs.blender.org/manual/en/2.81/modeling/meshes/editing/subdividing/loop.html#tool-mesh-loop-cut) is a very useful tool.<br> 
+    Delete the vertices: Selcet the vertices, press **X** key to Delete or [Dissolve the vertices](https://docs.blender.org/manual/en/2.81/modeling/meshes/editing/basics/deleting.html?highlight=delete%20vertex).
 
-    * We could know how many vertexs have been Assigned on the Status Bare(lower right corner)
+    * We could know how many vertices have been Assigned on the Status Bare(lower right corner)
 ![Vimdrones Desiginer Vertex Number](/static/vertex-number.jpeg "Vimdrones Desiginer Vertex Number")
-    * In the Vertex Group Panal, we could click the **Remove** button to remove the vertexs which have been Assigned. And we could click the **Select**/**Deselect** button to check which vertexs have been Assigned.
+    * In the Vertex Group Panal, we could click the **Remove** button to remove the vertices which have been Assigned. And we could click the **Select**/**Deselect** button to check which vertices have been Assigned.
 * Change **Edit  Mode** to **Object Mode**
 
 #### Change the Drone Scene
@@ -76,8 +76,8 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 ![Vimdrones Desiginer Formation Append](/static/append-3d-eagle.gif "Vimdrones Desiginer Formation Append")
 
 #### Transform the Drone Scene
-* Select the Mesh Object in the material collections, **Item** -> **Transform**. You could add keyframe of Loction, Rotation or Scale to make the animation of teh Mesh Object, so the Drone Scene can been transform.
-* You could also deform the Object vertices or control points, or add Inherited animation(E.g armature) to the Object to make the animation. The Object has the animation, then the Drones has the animation.
+* Select the Mesh Object in the material collections, **Item** -> **Transform**. You could add keyframe of Loction, Rotation or Scale to make the animation of teh Mesh Object, so the Drone Scene can be transformed.
+* You could also deform the Object vertices or control points, or add Inherited animation(E.g armature) to the Object to make the animation. The Object has the animation, then the Drones have the animation.
 
 ## Land the Drones
 * When we finish all the Drone Formations, **Begin** **Append** the drones to the **End Scene**, set the drones to the same location of the Begin Scene at Current Frame -> 1
@@ -94,7 +94,7 @@ Select your target drones in **drones** Collection, select your color in color p
 ## Add Effector to change Drone Led Color
 * Click the **effectors** Collection in the Outliner. In the 3D Viewport, select Menu Bar **Add** -> **Mesh**, select the effector shape you like.
 * In the Properties Editor, select **Materials** tab, click **+ New** button to Add a new material. <br>
-In the Surface Panel, click **Use Nodes** to remove the property(gary blackground means unselect). Then we could chosse any effector color you like.<br>
+In the Surface Panel, click **Use Nodes** to remove the property(gary blackground means unselect). Then we could choose any effector color you like.<br>
 ![Vimdrones Desiginer Effector Color](/static/effector-color.jpg "Vimdrones Desiginer Effector Color") 
 * **Vehicle** -> **Effector** -> **Add** <br>
 We add a Empty in the effectors Collection. In the Properties Editor, select **Object Data** tab, we can change the Dispaly of the Empty. Usually, we make the same shape and size of the Empty and the Mesh.<br>
