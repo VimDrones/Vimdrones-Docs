@@ -11,7 +11,7 @@ site_url: https://docs.vimdrones.com
 site_favicon: /static/favicon.ico
 google_analytics: ['UA-120607162-1', 'docs.vimdrones.com']
 copyright: ©Vimdrones. All rights reserved.
-pages:
+nav:
 - Home: index.md
 - Drone Light Show Designer: designer.md
 - Ground Station Software: gcs.md
