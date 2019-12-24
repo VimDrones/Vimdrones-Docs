@@ -13,6 +13,9 @@
     * 3 Network Cables
 * Vimdrones Drone Light Show Designer Software
 * Vimdrones Ground Station Software
+![Ready To Fly List](/static/drone-light-show-equitment.jpg "Ready To Fly List")
+
+Dowmload <a href="/static/vimdrones-drone-light-syetem.pdf" target="_blank" >Vimdornes Drone Light Show System.pdf</a>
 
 **Other Additional Equipment**    
 
@@ -42,7 +45,7 @@
 
 
 ## Ground Station Setup Procedure
-Run Vimdrones GCS on computer
+Run Vimdrones GCS on computer  
 1. When the RTK Base is enter, click **Survey In** button   
 2. Waiting for Survey In ready, **Survey in(Success)**  
 3. Click **Open** button, Select Design Project   
@@ -53,9 +56,6 @@ Run Vimdrones GCS on computer
 8. Select Drone 1, click **Copy From Drone** button, copy drone 1 loction，green light  
 9. Click **Set Home** button, set home laction to all drones  
 10. Click **Takeoff** button, start your Drone Light Show  
-
-**Viddo Tutorial**  
-[Ckick to Watch Viddo Tutorial](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s)
 
 
 ## Post-Flight Setup Procedure

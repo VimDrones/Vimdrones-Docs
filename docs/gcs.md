@@ -49,7 +49,7 @@ By default the system shipped with pre config Mazzy Star Drone™, when you boug
 **Operation Video**
 
 * [Youtube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s)
-* [Bilibili](https://www.bilibili.com)
+* [Bilibili](https://www.bilibili.com/video/av79197730)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N5A8r9rXA68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  

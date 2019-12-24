@@ -48,8 +48,8 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 ## Change the Drone Formation
 #### Create Drones Vertex Group
 * Select the Mesh Object(E.g **Cube**),change **Object Mode** to **Edit Mode**
-* In the **Properties** Editor, click **Object Date** tab, click the button "+" on the right Panel border to add a Vertex Group, double-click the "Group" name and edit to "drones"
-* Select the vertices of the Mesh Object (one vertex represents one drone), click **Assign** button below the Panel<br> 
+* In the **Properties** Editor, click **Object Date** tab, click the Button "+" on the right Panel border to add a Vertex Group, double-click the "Group" name and edit to "drones"
+* Select the vertices of the Mesh Object (one vertex represents one drone), click **Assign** Button below the Panel<br> 
 ![Vimdrones Desiginer Add Vertex Group](/static/vertex-edit.jpg "Vimdrones Desiginer Add Vertex Group")
     * We could use the tools on the left to edit the vertices. Or from the Menu Bar **[Vertex](https://docs.blender.org/manual/en/2.81/modeling/meshes/editing/vertices.html#)** to edit the vertices. <br> 
     Add the vertices:[Loop Cut](https://docs.blender.org/manual/en/2.81/modeling/meshes/editing/subdividing/loop.html#tool-mesh-loop-cut) is a very useful tool.<br> 
@@ -57,17 +57,17 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 
     * We could know how many vertices have been Assigned on the Status Bare(lower right corner)
 ![Vimdrones Desiginer Vertex Number](/static/vertex-number.jpeg "Vimdrones Desiginer Vertex Number")
-    * In the Vertex Group Panal, we could click the **Remove** button to remove the vertices which have been Assigned. And we could click the **Select**/**Deselect** button to check which vertices have been Assigned.
+    * In the Vertex Group Panal, we could click the **Remove** Button to remove the vertices which have been Assigned. And we could click the **Select**/**Deselect** Button to check which vertices have been Assigned.
 * Change **Edit  Mode** to **Object Mode**
 
 #### Change the Drone Scene
-* **Formation** -> **New Formation**, selcet the Formations Scene(E.g **Begin Scene**) which need to be changed, then click the **Copy** button to copy a **New Formation** at in same loction. Double-click the **New Formation** in the outline Editor to edit the mane(E.g **Cube Formation**)
+* **Formation** -> **New Formation**, selcet the Formations Scene(E.g **Begin Scene**) which need to be changed, then click the **Copy** Button to copy a **New Formation** at in same loction. Double-click the **New Formation** in the outline Editor to edit the mane(E.g **Cube Formation**)
 * **Formation** -> **New Material Collection** -> **New**, creat New Material Collection in the outline Editor. Double-click the collect to rename it(E.g **Cube Material**)
 * Secect the Mesh Object(E.g **Cube**) which has the Drones Vertex Group, move it to the Material Collection(E.g **Cube Material**)
     * We could add more Mesh Objects to the Material Collection. These Mesh Objects should also have **drones** Vertex Group. That's much easier for us to design the drone scene.
     * **File** -> **Append/Import**  
     We can append/import the objects from other files and use them as the Material of drone scene. For example, if we import svg. files, we should convert them to Mesh(**Object** -> **Convert to** -> **Mesh from Curve/Meta/Surf/Text** in the Menu bar)
-* **Formation** -> **Vertex Formation**, select the formations(E.g **Cube Formation**) and its corresponding material_collections(E.g **Cube Material**). Click the **Append** button. The Empty Objects in the formation will reach the location of the "drones" Vertex Group
+* **Formation** -> **Vertex Formation**, select the formations(E.g **Cube Formation**) and its corresponding material_collections(E.g **Cube Material**). Click the **Append** Button. The Empty Objects in the formation will reach the location of the "drones" Vertex Group
 ![Vimdrones Desiginer Formation Changing](/static/formtion-changing.jpg "Vimdrones Desiginer Formation Changing")
 * In the Timeline Editor, set up the Current Frame to begin the new scene<br>
 **Formation** -> **Append**, select formations(E.g **Cube Formation**) , click **Begin** Button
@@ -86,14 +86,14 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 
 ## Direct Drone Led Color Change
 * **Vehicle** -> **Led Maigc** -> **Preview** <br>
-Select your target drones in **drones** Collection, select your color in color picker, click Preview button, drone color will be changed 
-* Select all the drones in **drones** Collection, make a "√" in from of the **is linear**, click **Add KeyFrame** button, we will the drone led color linear change<br>
+Select your target drones in **drones** Collection, select your color in color picker, click Preview Button, drone color will be changed 
+* Select all the drones in **drones** Collection, make a "√" in from of the **is linear**, click **Add KeyFrame** Button, we will the drone led color linear change<br>
 ![Vimdrones Desiginer Drone Led Color](/static/add-color.jpg "Vimdrones Desiginer Drone Led Color")    
    * remove "√" in from of the **is linear**, then **Add Keyframe**. In the Timeline, we can see we have inserted two keyframes, it means that the color of drones suddenly change.
 
 ## Add Effector to change Drone Led Color
 * Click the **effectors** Collection in the Outliner. In the 3D Viewport, select Menu Bar **Add** -> **Mesh**, select the effector shape you like.
-* In the Properties Editor, select **Materials** tab, click **+ New** button to Add a new material. <br>
+* In the Properties Editor, select **Materials** tab, click **+ New** Button to Add a new material. <br>
 In the Surface Panel, click **Use Nodes** to remove the property(gary blackground means unselect). Then we could choose any effector color you like.<br>
 ![Vimdrones Desiginer Effector Color](/static/effector-color.jpg "Vimdrones Desiginer Effector Color") 
 * **Vehicle** -> **Effector** -> **Add** <br>
@@ -108,19 +108,19 @@ In the 3D Viewport, select Menu Bar **Add** -> **Object** -> **Parent** -> **Obj
 * If we add more Effector to the drones at the same time, the color of drones will depend on the lastest Effector
 ![Vimdrones Desiginer Effector](/static/effector-video.gif "Vimdrones Desiginer Effector") 
 
-## Collision Check of the drones 
-* **Vehicle** -> **Flight Cheack** -> **Collision Check**, make a "√" in from of the **collision**  
-When we transform the Drone Scene, we can use this tool to check whether the drones collide together. If the distance between two drones is less than 2 meters， the timeline will be stoped and pop up error message  
-![Vimdrones Desiginer Drone Collision Check](/static/collision-check.jpg "Vimdrones Desiginer Drone Collision Check") 
+## Collision & Speed Check of the drones 
+* **Vehicle** -> **Flight Cheack**, make a "√" in from of the **collision** & **speed**  
+![Vimdrones Desiginer Drone Flight Check](/static/flight-check.jpg "Vimdrones Desiginer Drone Flight Check") 
 
-## Speed Check of the drones 
-* Open the Vimdrones Designer Console Software and play the animation in Blender, we will see the Current Frame, Fastest Drone, Fastest Speed and Closest Distance(between which two drones)
-realtime.  
+* Open the Vimdrones Designer Console Software, we could set the Distance Limit, Speed Limit, Horizon Speed Limit, Vertical Speed Limit and Chart Duration, then click the **Update Settings** Button
+
+* Play the animation in Blender, we will see those Limits realtime. When the value reach the Limits, it will appears in the window. It shows that the frame that which two drones reach which limit.  
+When we don't need those information, we could click the **Clear** Button
 ![Vimdrones Designer Console](/static/designer-console.png "Vimdrones Designer Console") 
-* The average speed of the drones is 2m/s, the fastest Speed is not more than 8m/s.
+* The average speed of the drones is 2m/s, the fastest Speed is not more than 7m/s.
 
 ## Export the Drone Light Show data
-**Vehicle** -> **Export**, select the file
+**Vehicle** -> **Export** / **Export Raw**, select the file
 
 ## How to design a Drone light  Show
 1. Draw down your minds on the picture book
