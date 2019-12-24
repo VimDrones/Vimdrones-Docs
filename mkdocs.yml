@@ -1,11 +1,18 @@
 site_name: Vimdrones Document 
 theme: readthedocs
+# theme:
+    # name: mkdocs
+    # shortcuts:
+        # help: 191    # ?
+        # next: 78     # n
+        # previous: 80 # p
+        # search: 83   # s
 site_url: https://docs.vimdrones.com
 site_favicon: /static/favicon.ico
 google_analytics: ['UA-120607162-1', 'docs.vimdrones.com']
 copyright: ©Vimdrones. All rights reserved.
-nav:
-    - Home: index.md
-    - Drone Light Show Designer: designer.md
-    - Ground Station Software: gcs.md
-    - Drone Show Setup: setup.md
+pages:
+- Home: index.md
+- Drone Light Show Designer: designer.md
+- Ground Station Software: gcs.md
+- Drone Show Setup: setup.md
