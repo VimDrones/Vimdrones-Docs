@@ -1,7 +1,7 @@
 ## Installation
 Install Vimdrones GCS on your computer, Mac OS or Windows
 
-## System Requiremnt
+## System Requirement
 For details please visit [Drone Show Setup](/setup).
 
 ## Adding new Mazzy Star Drone™ to the system
@@ -41,10 +41,14 @@ By default the system shipped with pre config Mazzy Star Drone™, when you boug
 4. Power on Mazzy Star Drone
 5. Mazzy Star Drone online
 6. Drone Status Check Pass
-7. Click **Upload** button, uplaod rajectory Design to the drones
-8. Select Drone 1, click **Copy From Drone** button, copy drone 1 loction
-9. Click **Set Home** button, set home laction to all drones
+7. Click **Upload** button, upload trajectory Design to the drones
+8. Select Drone 1, click **Copy From Drone** button, copy drone 1 location
+9. Click **Set Home** button, set home location to all drones
 10. Click **Takeoff** button, star your Drone Light Show
+
+## RealTime 3D position view
+Click **Open Realtime 3D View** to view drone's real time 3D position 
+![RealTime 3D position view](/static/real-time-3d-position-view.png "RealTime 3D position view")
 
 **Operation Video**
 
