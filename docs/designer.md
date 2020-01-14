@@ -119,10 +119,47 @@ When we don't need those information, we could click the **Clear** Button
 ![Vimdrones Designer Console](/static/designer-console.png "Vimdrones Designer Console") 
 * The average speed of the drones is 2m/s, the fastest Speed is not more than 7m/s.
 
-## Export the Drone Light Show data
-**Vehicle** -> **Export** / **Export Raw**, select the file
+## Export Animation
 
-## How to design a Drone light  Show
+![Vimdrones Designer Export](/static/export-panel.png "Vimdrones Designer Export") 
+
+**Export Settings**
+
+* Position Scale: scale factor to coordinate, default is 1, if you want to change the pattern size this would help (do not change it unless you know what it is!) 
+* Z Axis Rotate: rotate degree in clockwise to coordinate, default is 0, if your flight field direction is different from your design, this would help (do not change it unless you know what it is!) 
+
+**Export To Vimdrones GCS**
+
+* **Vehicle** -> **Export** click Export button and select the your floder to save
+
+**Export To Third Party Fly System**
+
+* **Vehicle** -> **Third Party** Export button and select the your floder to save
+
+* Support List
+
+| Company        | Name           | Scene |  Sample Path  |
+| ------------- |:-------------:| :-----:| :-----:|
+| None      | Raw Format | Custom | <a download href="/static/third_party_path/vimdrones-third-party_-path-raw-format.zip">Download</a> |
+| Ugcs      | Drone Show Software | Outdoor | <a download href="/static/third_party_path/vimdrones-third-party_-path-raw-format.zip">Download</a> |
+| High Great | Fylo    | Indoor | <a href="#">Download</a> |
+
+What to add your system to the list? please [contact us](https://vimdrones.com/contact)
+
+Sample Path Video [Youtube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s) | [Bilibili](https://www.bilibili.com/video/av79197730)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ax7skeVCrL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* Raw Data Format
+
+1.txt  -> drone id 1, fps equal blender settings
+```
+1 0.000 0.000 0.000 204 194 40
+2 0.000 0.000 0.094 204 194 40
+3 0.000 0.000 0.188 204 194 40
+```
+|frame number | x | y | z | r | g | b
+
+## How to design a Drone Light Show
 1. Draw down your minds on the picture book
 2. Creat Material Objects in the Blender
 3. Through Begin and Append to transform the drone scene
