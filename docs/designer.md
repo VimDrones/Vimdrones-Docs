@@ -157,7 +157,7 @@ Sample Path Video [Youtube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s) | 
 2 0.000 0.000 0.094 204 194 40
 3 0.000 0.000 0.188 204 194 40
 ```
-|frame number | x | y | z | r | g | b
+| frame number | x | y | z | r | g | b |
 
 ## How to design a Drone Light Show
 1. Draw down your minds on the picture book
