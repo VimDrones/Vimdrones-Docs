@@ -52,8 +52,8 @@ Click **Open Realtime 3D View** to view drone's real time 3D position
 
 **Operation Video**
 
-* [Youtube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s)
-* [Bilibili](https://www.bilibili.com/video/av79197730)
+* [YouTube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s)
+* [bilibili](https://www.bilibili.com/video/av79197730)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N5A8r9rXA68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  

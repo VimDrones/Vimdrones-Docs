@@ -15,7 +15,7 @@
 * Vimdrones Ground Station Software
 ![Ready To Fly List](/static/drone-light-show-equitment.jpg "Ready To Fly List")
 
-Dowmload <a href="/static/vimdrones-drone-light-syetem.pdf" target="_blank" >Vimdornes Drone Light Show System.pdf</a>
+Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vimdornes Drone Light Show System.pdf</a>
 
 **Other Additional Equipment**    
 
@@ -24,22 +24,22 @@ Dowmload <a href="/static/vimdrones-drone-light-syetem.pdf" target="_blank" >Vim
 * A set of foldable desk and chair (would be very good) 
 
 
-## Pre-Filght Preparation
+## Pre-Flight Preparation
 * Battery preparation
     * Please prepare a sufficient number of batteries（more than the number of drones）
     * Please charge the battery fully（according to the flight time, the voltage is at less 8.2V)
 * Drone preparation
     * Please check the number the drones 
     * Please check the airframe od the drones, especially for the propeller guard, propeller and the motor
-* Filght Path preparation
-    * Use Vimdrones Designer to design the Flight path,save the .blend file and imput the data
+* Flight Path preparation
+    * Use Vimdrones Designer to design the Flight path,save the .blend file and export the data
 
-## Pre-Filght Setup Procedure
+## Pre-Flight Setup Procedure
 * Power the wifi router, connect the wifi router and PoE power supply with a network cable 
 * Place the tripod，setup the RTK Base and the antenna, use the Feeder to connect the RTK Base and the antenna
-* Connect the RTK Base to PoE power supply with a etwork cable  (so the wifi router can communicate with the RTK base)
+* Connect the RTK Base to PoE power supply with a network cable  (so the wifi router can communicate with the RTK base)
 * Power the RTK Base through the PoE power supply
-* Power the radio transmiter
+* Power the radio transmitter
 * Place and locate drones, the distance between each drone no less than 2 m
 * Insert the batteries to the drones, but not power the drones 
 
@@ -52,14 +52,14 @@ Run Vimdrones GCS on computer
 4. Power on Mazzy Star Drones, red light  
 5. Mazzy Star Drone online, we can see the Drone Status on GCS  
 6. Drone Status Check Pass, yellow light  
-7. Click **Upload** button, uplaod rajectory Design to the drones, white light flashing  
-8. Select Drone 1, click **Copy From Drone** button, copy drone 1 loction，green light  
-9. Click **Set Home** button, set home laction to all drones  
+7. Click **Upload** button, upload trajectory Design to the drones, white light flashing  
+8. Select Drone 1, click **Copy From Drone** button, copy drone 1 location，green light  
+9. Click **Set Home** button, set home location to all drones  
 10. Click **Takeoff** button, start your Drone Light Show  
 
 
 ## Post-Flight Setup Procedure
-* Unplug the batteries of the dornes to the package (charge them for the next drone light show)
+* Unplug the batteries of the drones to the package (charge them for the next drone light show)
 * Put the drones into the packages, then stack up the packages and tie them up with a buckle
 * Pack up the Drone Light Show System into the package
 * Pack up the remaining equipment
