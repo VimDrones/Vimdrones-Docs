@@ -46,17 +46,34 @@ By default the system shipped with pre config Mazzy Star Drone™, when you boug
 9. Click **Set Home** button, set home location to all drones
 10. Click **Takeoff** button, star your Drone Light Show
 
-## RealTime 3D position view
-Click **Open Realtime 3D View** to view drone's real time 3D position 
-![RealTime 3D position view](/static/real-time-3d-position-view.png "RealTime 3D position view")
-
 **Operation Video**
 
 * [YouTube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s)
 * [bilibili](https://www.bilibili.com/video/av79197730)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N5A8r9rXA68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- 
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/N5A8r9rXA68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+## RealTime 3D position view
+Click **Open Realtime 3D View** to view drone's real time 3D position 
+![RealTime 3D position view](/static/real-time-3d-position-view.png "RealTime 3D position view")
+
+
+
+## Takeoff Countdown 
+* Click the time In the lower right corner, set the takeoff time
+* Click the **Turn On** Button, then it begin to countdown. Drones will takeoff when reach the set time
+    * If the set time is less than now, it will give you a notice.
+    * You could Turn off the countdown before the set time
+
+
+**Operation Video**
+
+* [YouTube](https://youtu.be/nBi81nieGS8)
+* [bilibili](https://www.bilibili.com/video/av87958242/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nBi81nieGS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
  
  

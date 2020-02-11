@@ -115,7 +115,7 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 ![Vimdrones Designer Vertex Number](/static/vertex-number.jpeg "Vimdrones Designer Vertex Number")
     * In the Vertex Group Panel, we could click the **Remove** Button to remove the vertices which have been Assigned. And we could click the **Select**/**Deselect** Button to check which vertices have been Assigned.
 
-* Change **Edit  Mode** to **Object Mode**
+* Change **Edit Mode** to **Object Mode**
 
 
 
@@ -160,11 +160,22 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 
 
 ## Direct Drone Led Color Change
-* **Vehicle** -> **Led Magic** -> **Preview** <br>
-Select your target drones in **drones** Collection, select your color in color picker, click Preview Button, drone color will be changed 
+* **Led** -> **Led Magic** -> **Preview** <br>
+Select your target drones, select the color you like in color picker, click **Preview** Button, the drones color will be changed. (Select other drones, same operation as above)
 * Select all the drones in **drones** Collection, make a "√" in from of the **is linear**, click **Add KeyFrame** Button, we will the drone led color linear change<br>
-![Vimdrones Designer Drone Led Color](/static/add-color.jpg "Vimdrones Designer Drone Led Color")    
+![Vimdrones Designer Drone Led Color](/static/add-color.jpg "Vimdrones Designer Drone Led Color")
    * remove "√" in from of the **is linear**, then **Add Keyframe**. In the Timeline, we can see we have inserted two keyframes, it means that the color of drones suddenly change.
+
+**Operation Video** 
+
+* [YouTube](https://youtu.be/zKzyAkC0M3o)  
+* [bilibili](https://www.bilibili.com/video/av88039381/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zKzyAkC0M3o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+---
+
+
 
 ## Add Effector to change Drone Led Color
 
@@ -189,11 +200,20 @@ In the 3D Viewport, select Menu Bar **Add** -> **Object** -> **Parent** -> **Obj
 
 **Transform Effector**  
 
-* When we transform the Empty, so the Mesh transform. Now we can add some animation to the Empty Effector. When the drones inside the Empty, the color these drones will be changed to the color of the Mesh. 
+* When we transform the Empty, so the Mesh transform. Now we can add some animation to the Empty Effector. When the drones inside the Empty, the color of these drones will be changed to the color of the Mesh. 
 ![Vimdrones Designer Effector](/static/effector.jpg "Vimdrones Designer Effector") <br>
 
 * If we add more Effectors to the drones at the same time, the color of drones will depend on the latest Effector
 ![Vimdrones Designer Effector](/static/effector-video.gif "Vimdrones Designer Effector") 
+
+**Operation Video** 
+
+* [YouTube](https://youtu.be/e1_7dmeRi2c)  
+* [bilibili](https://www.bilibili.com/video/av88166427/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e1_7dmeRi2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+---
 
 
 **Set the Effector LED Type**
