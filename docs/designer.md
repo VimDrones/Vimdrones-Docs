@@ -146,7 +146,7 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 **Operation Video** 
 
 * [YouTube](https://youtu.be/hvQPp3ziviU)  
-* [bilibili](https://www.bilibili.com/video/av87541449/)
+* [bilibili](https://www.bilibili.com/video/av87798888/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hvQPp3ziviU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
@@ -190,7 +190,7 @@ In the Surface Panel, click **Use Nodes** to remove the property(gary background
 **Add An Empty Object to Parent with effector shape Mesh**  
 (This part could be skipped, it isn't affect the final effect)
 
-* **Vehicle** -> **Effector** -> **Add** <br>
+* **Led** -> **Effector** -> **Add** <br>
 We add a Empty in the effectors Collection. In the Properties Editor, select **Object Data** tab, we can change the Display of the Empty. Usually, we make the same shape and size of the Empty and the Mesh.<br>
 ![Vimdrones Designer Empty Display](/static/empty-display.jpg "Vimdrones Designer Empty Display") 
 * First select the Mesh, then select the Empty.   
@@ -221,24 +221,40 @@ In the 3D Viewport, select Menu Bar **Add** -> **Object** -> **Parent** -> **Obj
 * What are the types of the Effector LED?
     * DEFAULT: one color
     * RANDOM: two or more different colors change randomly
-    * ORDERED: two or more different colors change smoothly  
+    * ORDERED: two or more different colors change in order  
 ![Vimdrones Designer Effector](/static/effector-type.png "Vimdrones Designer Effector") 
     * duration: the higher the value, the faster the color changes
-    * linear: two color gradual change，if remove the "√" ,two colors change suddenly 
+    * linear: two color change gradual，if remove the "√" ,two colors change suddenly 
     * order: if the drones are inside two or more Effectors at the same time, we could set the valve to change the effector order. The higher the value, the higher the priority is to affect the color of the drone.
 
-* Select the effector mesh, add one or more material and select the colors, set the parameters, the click update.
+* Select the effector mesh, add one or more material and set the colors
+* **Led** -> **Effector**
+* Choose selected_effector, set the duration, if linear, set the order, choose effector type
+* Click update
+* Play the animation
+
+**Operation Video** 
+
+* [YouTube](https://youtu.be/6l_fUSTwbMQ)  
+* [bilibili](https://www.bilibili.com/video/av88538932/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6l_fUSTwbMQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+---
+
+
+
 
 ## Flight Check of the drones 
 
 * **Vehicle** -> **Flight Check**, make a "√" in from of the **enable**  
 ![Vimdrones Designer Drone Flight Check](/static/flight-check.jpg "Vimdrones Designer Drone Flight Check") 
 
-* Open Vimdrones Designer, Click **CONSOLE**, open the Vimdrones Designer Console
+* Open **Vimdrones Designer**, Click **CONSOLE**, open the **Vimdrones Designer Console**
 
 * we could set the Distance Limit, Speed Limit, Horizon Speed Limit, Vertical Speed Limit and Chart Duration, then click the **Update Settings** Button
 
-* Play the animation in Blender, we will see those Limits realtime. When the value reach the Limits, it will appears in the window. It shows that the frame that which two drones reach which limit.  
+* Play the animation in Blender, we will see those Limits realtime. When the value reach the Limits, it will appears in the window. It shows that two drones reach the limit at that frame  
 When we don't need those information, we could click the **Clear** Button
 ![Vimdrones Designer Console](/static/designer-console.png "Vimdrones Designer Console") 
 

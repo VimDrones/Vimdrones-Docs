@@ -3,7 +3,7 @@
 * Mazzy Star Drone Battery
 * Mazzy Star Drone Battery Charger
 * Vimdrones Drone Light Show System     
-    * 1 Vimdrones smart RTK Base
+    * 1 Vimdrones Smart RTK Base
     * 1 Wifi Router & Charging Cable
     * 1 Spektrum Transmitter 
     * 1 Tripod
@@ -20,7 +20,7 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
 **Other Additional Equipment**    
 
 * May need 220V power supply from mobile power bank  
-* some of the Power Strips  
+* Some of the Power Strips  
 * A set of foldable desk and chair (would be very good) 
 
 
@@ -32,7 +32,8 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
     * Please check the number the drones 
     * Please check the airframe od the drones, especially for the propeller guard, propeller and the motor
 * Flight Path preparation
-    * Use Vimdrones Designer to design the Flight path,save the .blend file and export the data
+    * Use Vimdrones Designer to design the Flight path, save the .blend file and export the data
+
 
 ## Pre-Flight Setup Procedure
 * Power the wifi router, connect the wifi router and PoE power supply with a network cable 
@@ -42,6 +43,8 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
 * Power the radio transmitter
 * Place and locate drones, the distance between each drone no less than 2 m
 * Insert the batteries to the drones, but not power the drones 
+
+![Drone Light Show System](/static/drone-light-show-system-communication-diagram.jpg "Drone Light Show System") 
 
 
 ## Ground Station Setup Procedure
@@ -63,3 +66,7 @@ Run Vimdrones GCS on computer
 * Put the drones into the packages, then stack up the packages and tie them up with a buckle
 * Pack up the Drone Light Show System into the package
 * Pack up the remaining equipment
+
+## How to Arm Mazzy Star Drone with Remote Control
+
+![Remote Control](/static/transmitter-controls.jpg "Remote Control") 

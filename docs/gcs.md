@@ -34,26 +34,6 @@ By default the system shipped with pre config Mazzy Star Drone™, when you boug
 
 * Click **RC Bind** button in Drone panel and see orange light flash in drone, press RC Transmitter bind button and power on the Transmitter, when heard a happy voice means it success
 
-## Running drone light show
-1. Base Enter, click **Survey In** button 
-2. Waiting for Survey in ready
-3. Click **Open** button, Select Design Project 
-4. Power on Mazzy Star Drone
-5. Mazzy Star Drone online
-6. Drone Status Check Pass
-7. Click **Upload** button, upload trajectory Design to the drones
-8. Select Drone 1, click **Copy From Drone** button, copy drone 1 location
-9. Click **Set Home** button, set home location to all drones
-10. Click **Takeoff** button, star your Drone Light Show
-
-**Operation Video**
-
-* [YouTube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s)
-* [bilibili](https://www.bilibili.com/video/av79197730)
-
- <iframe width="560" height="315" src="https://www.youtube.com/embed/N5A8r9rXA68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
 
 ## RealTime 3D position view
 Click **Open Realtime 3D View** to view drone's real time 3D position 
@@ -65,8 +45,9 @@ Click **Open Realtime 3D View** to view drone's real time 3D position
 * Click the time In the lower right corner, set the takeoff time
 * Click the **Turn On** Button, then it begin to countdown. Drones will takeoff when reach the set time
     * If the set time is less than now, it will give you a notice.
-    * You could Turn off the countdown before the set time
-
+    * You could Turn off the countdown before the set time  
+    
+![Takeoff Countdown Setup](/static/coundown-setup.png "Takeoff Countdown Setup")
 
 **Operation Video**
 
