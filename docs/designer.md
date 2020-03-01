@@ -9,6 +9,19 @@
 * Double click the icon to open the Vimdrones Designer  
 ![Vimdrones Designer Installation](/static/installation-mac.jpg "Vimdrones Designer Installation")  
 
+
+## System requirements
+
+System requirements for Vimdrones Designer Software:
+
+* Operating system: Windows 8; Windows 10; Mac OS
+* CPU: Intel Core i5 or better
+* Memory: Minimum 8 GB of RAM or more
+* Hard drive: SSD 120 GB. Recommended 256GB or more
+* Network: TCP/IPv4 network stack, WiFi or Ethernet. Recommended Ethernet
+
+
+
 ## Active License
 * Type your emaiL and token, click **Active** Button
 ![Vimdrones Designer Active License](/static/active-license.png "Vimdrones Designer Active License")
@@ -47,7 +60,7 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 
 **what is the distance**   
 
-* Distance between two drones，the default value is 2m. 
+* Distance between two drones, the default value is 2m. 
 
 **What we have after create drone team?**  
 
@@ -63,7 +76,7 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 
 **How to remove the LED glow?**  
 
-* If your computer configuration is not high， we suggest you to remove LED glow effect
+* If your computer configuration is not high, we suggest you to remove LED glow effect
 * **Led** -> **Settings**, remove the "√" in from of use_nodes, then click **update**  
 ![Vimdrones Designer Create Drone Team](/static/create-drone-team-no-use-node.png "Vimdrones Designer Create Drone Team")
 

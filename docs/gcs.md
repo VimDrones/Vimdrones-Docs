@@ -1,8 +1,24 @@
 ## Installation
 Install Vimdrones GCS on your computer, Mac OS or Windows
 
-## System Requirement
-For details please visit [Drone Show Setup](/setup).
+**Mac**
+
+* Double click the [Vimdrones_GCS-x.x.x.dmg], pull the **Vimdrones GCS icon** to the **Applications file**. 
+* Double click the icon to open the Vimdrones GCS
+![Installation Mac](/static/installation-gcs-mac.jpg "Installation Mac")
+
+
+
+## System requirements
+
+System requirements for Ground Station Software:
+
+* Operating system: Windows 8; Windows 10; Mac OS
+* CPU: Intel Core i5 or better
+* Memory: Minimum 8 GB of RAM or more
+* Hard drive: SSD 120 GB. Recommended 256GB or more
+* Network: TCP/IPv4 network stack, WiFi or Ethernet. Recommended Ethernet
+
 
 ## Adding new Mazzy Star Drone™ to the system
 By default the system shipped with pre config Mazzy Star Drone™, when you bought new Mazzy Star Drone™ in later orders to extend the business show scale, you will need to follow these steps to add it to current system
@@ -34,19 +50,201 @@ By default the system shipped with pre config Mazzy Star Drone™, when you boug
 
 * Click **RC Bind** button in Drone panel and see orange light flash in drone, press RC Transmitter bind button and power on the Transmitter, when heard a happy voice means it success
 
+## Interface 
 
+![Ground Station Interface](/static/gsc-interface-before-takeoff.png "Ground Station Interface")
+
+**Top Bar**
+
+![Ground Station Interface](/static/gcs-top.png "Ground Station Interface")
+
+* Online: The number of drones online
+* Open Realtime 3D View: Click to view drone's real time 3D position 
+* Project: unselected -> the project name
+
+**Drone Collection**
+
+![Ground Station Interface](/static/gcs-drone-collection.png "Ground Station Interface")
+
+* Top left number: Drone ID
+* Top right number: Satellite Count
+* Middle number: Drone's Heading Angle
+* Left bar: Wifi Signal
+    * High -> Low: Green -> Orange -> Red
+* Right bar: Radio Signal
+    * High -> Low: Green -> Orange -> Red
+* Button bar: Battery Status
+    * High -> Low: Green -> Orange -> Red
+* Background: 
+    * Red
+    * Green
+    * flicker
+
+
+**Satellite Count**
+
+![Ground Station Interface](/static/gcs-satellite-status.png "Ground Station Interface")
+
+* Satellite Count: Show the count of Satellite
+* Cylindrical bar: Satellite signal, the unit is DB
+* Satellite name
+* Satellite country
+
+**RKT Base Status**
+
+![Ground Station Interface](/static/gcs-rtk-base.png "Ground Station Interface")
+
+RTK Base: (Error) -> (Connected)   
+iTow: Satellite time   
+Survey In: (Not Start Yet) -> (Process) -> (Success)   
+Acc: Accuracy<2m -> Survey In(Success)   
+
+* Radio Pair: Pair 915/868 Mhz Radio Channel to drone and TRK base
+* Survey In: When the RTK Base is enter, click Survey In button
+
+
+**Drone Status**
+
+![Ground Station Interface](/static/gcs-drone-status.png "Ground Station Interface")
+
+When we click Drone ID on the **Drone Collection**, we could see the stats of this drone. By default, it shows Drone ID 8 Status
+
+**GNSS(Global Navigation Satellite System)**  
+Satellite Count 
+Fix Type: Normal -> RTK Float -> RTK Fix(Ready to takeoff)  
+HODP: Horizontal dilution of precision 
+* Poor -> Good: Red -> Orange() -> Green(<100?) 
+VDOP: Vertical dilution of precision 
+* Poor -> Good: Red -> Orange() -> Green(<80?) 
+
+**Global Position**  
+lat: latitude  
+lon: longitude  
+alt: Altitude   
+relative alt: Relative Altitude 
+  
+
+**Status Check**  
+GNSS: False -> Ready  
+Mode: False -> Ready  
+Arming: False -> Ready  
+Wifi Channel: OFF/ON   
+Radio Channel: OFF/ON  
+
+
+**Drone Status**  
+RTCM:  1Hz / Loss  
+* RTCM Version 3.0, provide broadcasted GNSS real-time differential corrections and raw
+data
+
+Mode:    
+
+* 0 Stabilize: Drone is flying by Remote Control  
+* 1 Altitude hold: Drone is flying by Remote Control
+* 2 Guided:  Drones are flying by themselves
+
+ARMED:  
+
+* armed  
+* disarmed
+
+HEADING: Drone's Heading Angle, 0° means ? 
+IP: 
+
+
+**Vibration Status**  
+X/Y/Z  
+Clip:   
+
+
+**Battery Status**  
+Voltage: When the voltage drops to 7.2V, the drone will automatically return to launch  
+
+
+**Trajectory**  
+Status: False -> Ready   
+Token: The same as the Project Token
+
+
+**Button**   
+
+
+
+* Reboot: Reboot the drone
+* Mag Cal  
+* ESC Cal
+* Motor Test
+* Radio Bind   
+* Rescue   
+* RTL: The drone return to launch   
+* Land: The drone descends slowly and vertically to reach the launch 
+* Upload: Upload trajectory design to the drone
+
+
+
+
+---
+**Project**
+
+![Ground Station Interface](/static/gcs-project-data.png "Ground Station Interface")
+
+Current: The current project name  
+Music: The current project music name  
+Token:   
+Qty: The quantity of drones   
+Time: The drone light show duration
+
+* Open: Click Open button, Select Design Project 
+* Upload: Click Upload button, upload trajectory Design to the drones, the drones are white light flashing  
+
+
+**Set Home**
+
+![Ground Station Interface](/static/gcs-set-home-data.png "Ground Station Interface")
+
+lat/lon/alt   
+
+* Copy From Drone: When Drone Status Check Pass, select Drone 1, click **Copy From Drone** button, copy drone 1 location, it shows the latitude(lat), longitude(lon) and altitude(alt) of Drone 1  
+* Set Home: Click **Set Home** button, set home location to all drones  
+
+
+**Log System**
+
+![Ground Station Interface](/static/gcs-log-system.png "Ground Station Interface")
+
+
+**LED Control**
+
+![Ground Station Interface](/static/gcs-led-control.png "Ground Station Interface")
+
+Select the color, set the diffuse color(LED brightness), click **Update** button. We could control the LED Control Realtime when having the drone light show.
+
+
+**Takeoff**  
+
+![Ground Station Interface](/static/gcs-takeoff.png "Ground Station Interface")
+
+* Reboot All: Reboot all the drones
+* Land: The drones will descend slowly and vertically to reach the launch in the show, when we click the button. (do not click it unless you know what it is!)
+
+* Turn On: Click the time to set the takeoff time, then click the **Turn On** button to finish the setting. The **Turn On** button will change to **Turn OFF** button, you could it to shut down the countdown setting.  
+* Takeoff: When everything id Ok, Click the **Takeoff** button to begin your drone light show
+
+
+---
 ## RealTime 3D position view
 Click **Open Realtime 3D View** to view drone's real time 3D position 
+
 ![RealTime 3D position view](/static/real-time-3d-position-view.png "RealTime 3D position view")
 
 
 
 ## Takeoff Countdown 
 * Click the time In the lower right corner, set the takeoff time
-* Click the **Turn On** Button, then it begin to countdown. Drones will takeoff when reach the set time
+* Click the **Turn On** button, then it begin to countdown. Drones will takeoff when reach the set time
     * If the set time is less than now, it will give you a notice.
     * You could Turn off the countdown before the set time  
-    
+
 ![Takeoff Countdown Setup](/static/coundown-setup.png "Takeoff Countdown Setup")
 
 **Operation Video**

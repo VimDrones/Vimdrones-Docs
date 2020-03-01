@@ -60,6 +60,15 @@ Run Vimdrones GCS on computer
 9. Click **Set Home** button, set home location to all drones  
 10. Click **Takeoff** button, start your Drone Light Show  
 
+**Operation Video**
+
+* [YouTube](https://youtu.be/N5A8r9rXA68)
+* [bilibili](https://www.bilibili.com/video/av79197730/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N5A8r9rXA68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 
 ## Post-Flight Setup Procedure
 * Unplug the batteries of the drones to the package (charge them for the next drone light show)
@@ -67,6 +76,39 @@ Run Vimdrones GCS on computer
 * Pack up the Drone Light Show System into the package
 * Pack up the remaining equipment
 
+
+
 ## How to Arm Mazzy Star Drone with Remote Control
 
 ![Remote Control](/static/transmitter-controls.jpg "Remote Control") 
+
+**More details:**
+
+* [DXe Transmitter Manual – Multilingual](https://www.spektrumrc.com/ProdInfo/Files/SPM1000-manual-MULTI.pdf)  
+
+
+
+## About 2s-3000mAh LiPo battery
+
+* Its capacity is 3000 mAh and the rated voltage is 8.7V. 
+* Charger light will turn red from green light, while the battery is fully charged. 
+
+**Battery Charging and Discharging**
+
+* At normal charging mode, in constant current stage, the battery is charged in 0.2C until voltage reaches 8.7V, when constant voltage stage starts. Whole charging ends after 3.5 hours or when charging current is less than 60mA(0.02C). 
+* At fast charging mode, the charging current is 1C until voltage reaches at 8.7V. The whole process is up to 3 hours or ends when charging current is less than 60mA(0.02C)
+	
+			
+**Usage Warning**
+
+* Do not disassemble, crush and incinerate, drop or leave high pressure on the battery. 
+* Do not short circuit the battery 
+* Do not expose the battery to temperatures above 45 degrees or below 0 degrees
+
+**Storage Instruction**
+
+* Keep the environment dry and clean 
+* Ensure the battery at a storage voltage (7.08-7.62V) if not in use for a long time. If voltage is above or below that level, please charge or discharge battery
+* Battery must be fully charged and discharged routinely every three month. After battery is fully discharged, recharge the battery to 50% capacity 
+
+
