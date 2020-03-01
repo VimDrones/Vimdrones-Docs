@@ -75,10 +75,9 @@ By default the system shipped with pre config Mazzy Star Drone™, when you boug
     * High -> Low: Green -> Orange -> Red
 * Button bar: Battery Status
     * High -> Low: Green -> Orange -> Red
-* Background: 
-    * Red
-    * Green
-    * flicker
+* Background color: 
+    * Red: Ready
+    * Green: Not ready
 
 
 **Satellite Count**
@@ -100,22 +99,25 @@ Survey In: (Not Start Yet) -> (Process) -> (Success)
 Acc: Accuracy<2m -> Survey In(Success)   
 
 * Radio Pair: Pair 915/868 Mhz Radio Channel to drone and RTK base
-* Survey In: When the RTK Base is enter, click Survey In button
+* Survey In: When the RTK Base is enter, click **Survey In** button
 
 
 **Drone Status**
 
 ![Ground Station Interface](/static/gcs-drone-status.png "Ground Station Interface")
 
-When we click Drone ID on the **Drone Collection**, we could see the stats of this drone. By default, it shows Drone ID 8 Status
+When we click Drone ID on the **Drone Collection**, we could see the stats of this drone. By default, it shows Drone **ID: 8** Status. We could see the ID No. and Online/Outline on the Drone Icon
 
 **GNSS(Global Navigation Satellite System)**  
 Satellite Count 
 Fix Type: Normal -> RTK Float -> RTK Fix(Ready to takeoff)  
 HODP: Horizontal dilution of precision 
-* Poor -> Good: Red -> Orange() -> Green(<100) 
-VDOP: Vertical dilution of precision 
-* Poor -> Good: Red -> Orange() -> Green(<80) 
+
+* Poor -> Good: Red -> Orange -> Green 
+
+VDOP: Vertical dilution of precision  
+
+* Poor -> Good: Red -> Orange -> Green
 
 **Global Position**  
 lat: Latitude  
@@ -134,6 +136,7 @@ Radio Channel: OFF/ON
 
 **Drone Status**  
 RTCM:  Sending Frequency
+
 * RTCM Version V3 , provide broadcasted GNSS real-time differential corrections and raw
 data
 
@@ -145,12 +148,12 @@ Mode:
 * 3 RTL: Automatically return to home position
 * 4 LAND: Automatically landing in current position
 
-ARMED:  
+ARMED: Show the drone's armed mode  
 
-* armed  
-* disarmed
+* armed: The drones have been flying
+* disarmed: Before the drones takeoff
 
-HEADING: Drone's heading angle degrees against north
+HEADING: Drone's heading angle degrees against north  
 IP: Drone's ip address in network
 
 
@@ -170,7 +173,7 @@ Token: The same as the Project Token
 
 
 
-* Reboot: Reboot the drone
+* Reboot (Reboot the drone)
 * Mag Cal (drone mag calibration) 
 * ESC Cal (drone esc calibration)
 * Motor Test (drone motor testing)
@@ -190,12 +193,12 @@ Token: The same as the Project Token
 
 Current: The current project name  
 Music: The current project music name  
-Token:   
+Token: The project token  
 Qty: The quantity of drones   
 Time: The drone light show duration
 
-* Open: Click Open button, Select Design Project 
-* Upload: Click Upload button, upload trajectory Design to the drones, the drones are white light flashing  
+* Open: Click **Open** button, Select Design Project 
+* Upload: Click **Upload** button, upload trajectory Design to the drones (LED lights are white light flashing) 
 
 
 **Set Home**
@@ -205,13 +208,14 @@ Time: The drone light show duration
 lat/lon/alt   
 
 * Copy From Drone: When Drone Status Check Pass, select Drone 1, click **Copy From Drone** button, copy drone 1 location, it shows the latitude(lat), longitude(lon) and altitude(alt) of Drone 1  
-* Set Home: Click **Set Home** button, set home location to all drones  
+* Set Home: Click **Set Home** button, set home location to all drones (LED lights change to green, mean the drones are ready to fly) 
 
 
 **Log System**
 
 ![Ground Station Interface](/static/gcs-log-system.png "Ground Station Interface")
 
+It shows the select drone's log system
 
 **LED Control**
 
@@ -225,7 +229,7 @@ Select the color, set the diffuse color(LED brightness), click **Update** button
 ![Ground Station Interface](/static/gcs-takeoff.png "Ground Station Interface")
 
 * Reboot All: Reboot all the drones
-* Land: The drones will descend slowly and vertically to reach the launch in the show, when we click the button. (do not click it unless you know what it is!)
+* Land: The drones will automatically landing in current position (do not click it unless you know what it is!)
 
 * Turn On: Click the time to set the takeoff time, then click the **Turn On** button to finish the setting. The **Turn On** button will change to **Turn OFF** button, you could it to shut down the countdown setting.  
 * Takeoff: When everything id Ok, Click the **Takeoff** button to begin your drone light show

@@ -52,10 +52,10 @@ Run Vimdrones GCS on computer
 1. When the RTK Base is enter, click **Survey In** button   
 2. Waiting for Survey In ready, **Survey in(Success)**  
 3. Click **Open** button, Select Design Project   
-4. Power on Mazzy Star Drones, red light  
+4. Power on Mazzy Star Drones, red light flashing 
 5. Mazzy Star Drone online, we can see the Drone Status on GCS  
-6. Drone Status Check Pass, yellow light  
-7. Click **Upload** button, upload trajectory Design to the drones, white light flashing  
+6. Drone Status Check Pass, yellow light flashing  
+7. Click **Upload** button, upload trajectory Design to the drones, white light fast flashing  
 8. Select Drone 1, click **Copy From Drone** button, copy drone 1 location，green light  
 9. Click **Set Home** button, set home location to all drones  
 10. Click **Takeoff** button, start your Drone Light Show  
