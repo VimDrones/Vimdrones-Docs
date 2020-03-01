@@ -148,10 +148,6 @@ Mode:
 * 3 RTL: Automatically return to home position
 * 4 LAND: Automatically landing in current position
 
-ARMED: Show the drone's armed mode  
-
-* armed: The drones have been flying
-* disarmed: Before the drones takeoff
 
 HEADING: Drone's heading angle degrees against north  
 IP: Drone's ip address in network
