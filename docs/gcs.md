@@ -88,7 +88,7 @@ By default the system shipped with pre config Mazzy Star Drone™, when you boug
 * Satellite Count: Show the count of Satellite
 * Cylindrical bar: Satellite signal, the unit is DB
 * Satellite name
-* Satellite country
+* Satellite flag
 
 **RKT Base Status**
 
@@ -99,7 +99,7 @@ iTow: Satellite time
 Survey In: (Not Start Yet) -> (Process) -> (Success)   
 Acc: Accuracy<2m -> Survey In(Success)   
 
-* Radio Pair: Pair 915/868 Mhz Radio Channel to drone and TRK base
+* Radio Pair: Pair 915/868 Mhz Radio Channel to drone and RTK base
 * Survey In: When the RTK Base is enter, click Survey In button
 
 
@@ -113,13 +113,13 @@ When we click Drone ID on the **Drone Collection**, we could see the stats of th
 Satellite Count 
 Fix Type: Normal -> RTK Float -> RTK Fix(Ready to takeoff)  
 HODP: Horizontal dilution of precision 
-* Poor -> Good: Red -> Orange() -> Green(<100?) 
+* Poor -> Good: Red -> Orange() -> Green(<100) 
 VDOP: Vertical dilution of precision 
-* Poor -> Good: Red -> Orange() -> Green(<80?) 
+* Poor -> Good: Red -> Orange() -> Green(<80) 
 
 **Global Position**  
-lat: latitude  
-lon: longitude  
+lat: Latitude  
+lon: Longitude  
 alt: Altitude   
 relative alt: Relative Altitude 
   
@@ -133,29 +133,29 @@ Radio Channel: OFF/ON
 
 
 **Drone Status**  
-RTCM:  1Hz / Loss  
-* RTCM Version 3.0, provide broadcasted GNSS real-time differential corrections and raw
+RTCM:  Sending Frequency
+* RTCM Version V3 , provide broadcasted GNSS real-time differential corrections and raw
 data
 
 Mode:    
 
 * 0 Stabilize: Drone is flying by Remote Control  
 * 1 Altitude hold: Drone is flying by Remote Control
-* 2 Guided:  Drones are flying by themselves
+* 2 Guided:  Drones are flying by autopilot
+* 3 RTL: Automatically return to home position
+* 4 LAND: Automatically landing in current position
 
 ARMED:  
 
 * armed  
 * disarmed
 
-HEADING: Drone's Heading Angle, 0° means ? 
-IP: 
+HEADING: Drone's heading angle degrees against north
+IP: Drone's ip address in network
 
 
 **Vibration Status**  
-X/Y/Z  
-Clip:   
-
+Drone X/Y/Z axis Vibration value(should be under 30, otherwise may have motor broken issue)
 
 **Battery Status**  
 Voltage: When the voltage drops to 7.2V, the drone will automatically return to launch  
@@ -171,14 +171,14 @@ Token: The same as the Project Token
 
 
 * Reboot: Reboot the drone
-* Mag Cal  
-* ESC Cal
-* Motor Test
-* Radio Bind   
-* Rescue   
-* RTL: The drone return to launch   
-* Land: The drone descends slowly and vertically to reach the launch 
-* Upload: Upload trajectory design to the drone
+* Mag Cal (drone mag calibration) 
+* ESC Cal (drone esc calibration)
+* Motor Test (drone motor testing)
+* Radio Bind (binding drone to the RC controller)
+* Rescue (Enable drone's RC control to manual control by RC controller)
+* RTL (Set drone to RTL mode)
+* Land (Set drone to LAND mode)
+* Upload (Upload single trajectory design to the drone)
 
 
 
