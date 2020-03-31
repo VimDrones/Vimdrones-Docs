@@ -72,7 +72,7 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 
 **How to set the LED glow strength?**  
 
-* **Led** -> **Settings**, set the strength value, click **update**. The higher the value, the stronger the glow
+* **Led** -> **Settings**, set the strength value, click **update**. The higher the value, the stronger the glow 
 
 **How to remove the LED glow?**  
 
@@ -167,8 +167,24 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 
 
 ## Land the Drones
-* **Formation** -> **Smart Land**, select the **begin_formations** and **end formations**, click **Create Gradient Formation**
+![Vimdrones Designer Drone Smart Land](/static/smart-land.jpg "Vimdrones Designer Drone Smart Land")
 
+* **Formation** -> **New Formation** 
+Copy the **Begin Scene** as the **End Formation**. If we don’t set the time frame, it will copy its last status. Adjust the location and Scale of the **End Formation**. It needs below the last scene in the view.  
+* **Formation** -> **Smart land**
+Select the **begin_formations** as the last scene of the show. Select the **End_formations** as the **End Formation**. Click **Create Safe Queues** Button. When the calculation is finish, it shows the INFO: “? safe queues create(? means the Quantity)” and “Calculation processing. It will take a while”. The larger the Scale of End Formation, the smaller of the quantity of safe queues create. It also create two new Collections: **Smart Landing Path**(show the path of landing) and **Smart Landing Formation**(copy the location of last scene). Set the time frame to **Begin** and **End** the **Smart Landing Formation**. The Empties of the **Smart Landing Formation** will follow the path to the **End Formation**.  
+* **Formation** -> **Append** 
+Before begin Smart Landing Formation, set the time frame to **Begin** and **Append** the **Smart Landing Formation**. We must remove the “√” on from of **auto resign**. So the drones will append the The Empties in order. Now the drones will follow the path to the End Formation. We could still adjust the **Smart Landing Formation** in Timeline.  
+* Finally, we copy the **Begin Scene** at frame 1 as **Land Formation**. **Formation** -> **Append**, set the time frame to **Begin** and **Append** the Land Formation.  
+
+**Operation Video** 
+
+* [YouTube](https://youtu.be/hvQPp3ziviU)  
+* [bilibili](https://www.bilibili.com/video/BV1bZ4y1j7Lj/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nOcmqNEDKWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+---
 
 
 
@@ -324,5 +340,30 @@ Tips: If we select a music for the drone light show background music at first, w
 ![Vimdrones Designer Music Effector](/static/music-bar.gif "Vimdrones Designer Music Effector") 
 
 
+## Add Line Font Text
 
+**Installation**
 
+* Download [addstrokefont_2_8.zip](https://github.com/Shriinivas/blenderstrokefont)  
+* Open Blender and select File->User Preferences  
+* Click install Add-ons tab and then Install Add-on from File  
+* Select the downloaded file  
+* Make a “√” in front of the Add-on 
+* Check the ‘Add Stroke Font Text’ option in the add-ons dialog  
+
+**Add line font text**
+
+* Add a Mesh
+* Select ‘Add Input Text’ option in the ‘Action’ drop-down
+* Input the text to be rendered in the text box
+* Select the font
+* Set Font Size
+* Select the Mesh in the properties of box
+* Select the font and click ‘Add Stroke Font Text
+
+**Operation Video** 
+
+* [YouTube](https://youtu.be/ZhzBpmudwIo)  
+* [bilibili](https://www.bilibili.com/video/av96248595/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZhzBpmudwIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
