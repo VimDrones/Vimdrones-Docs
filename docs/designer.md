@@ -112,7 +112,7 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 ---
 
 
-## Change the Drone Formation
+## Change Drone Formation
 
 **Create Drones Vertex Group**
 
@@ -166,14 +166,14 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 ---
 
 
-## Land the Drones
+## Smart Land
 ![Vimdrones Designer Drone Smart Land](/static/smart-land.jpg "Vimdrones Designer Drone Smart Land")
 
-* **Formation** -> **New Formation** 
+* **Formation** -> **New Formation**   
 Copy the **Begin Scene** as the **End Formation**. If we don’t set the time frame, it will copy its last status. Adjust the location and Scale of the **End Formation**. It needs below the last scene in the view.  
-* **Formation** -> **Smart land**
+* **Formation** -> **Smart land**  
 Select the **begin_formations** as the last scene of the show. Select the **End_formations** as the **End Formation**. Click **Create Safe Queues** Button. When the calculation is finish, it shows the INFO: “? safe queues create(? means the Quantity)” and “Calculation processing. It will take a while”. The larger the Scale of End Formation, the smaller of the quantity of safe queues create. It also create two new Collections: **Smart Landing Path**(show the path of landing) and **Smart Landing Formation**(copy the location of last scene). Set the time frame to **Begin** and **End** the **Smart Landing Formation**. The Empties of the **Smart Landing Formation** will follow the path to the **End Formation**.  
-* **Formation** -> **Append** 
+* **Formation** -> **Append**   
 Before begin Smart Landing Formation, set the time frame to **Begin** and **Append** the **Smart Landing Formation**. We must remove the “√” on from of **auto resign**. So the drones will append the The Empties in order. Now the drones will follow the path to the End Formation. We could still adjust the **Smart Landing Formation** in Timeline.  
 * Finally, we copy the **Begin Scene** at frame 1 as **Land Formation**. **Formation** -> **Append**, set the time frame to **Begin** and **Append** the Land Formation.  
 
@@ -188,7 +188,7 @@ Before begin Smart Landing Formation, set the time frame to **Begin** and **Appe
 
 
 
-## Direct Drone Led Color Change
+## Add Color to Drones
 * **Led** -> **Led Magic** -> **Preview** <br>
 Select your target drones, select the color you like in color picker, click **Preview** Button, the drones color will be changed. (Select other drones, same operation as above)
 * Select all the drones in **drones** Collection, make a "√" in from of the **is linear**, click **Add KeyFrame** Button, we will the drone led color linear change<br>
@@ -206,7 +206,7 @@ Select your target drones, select the color you like in color picker, click **Pr
 
 
 
-## Add Effector to change Drone Led Color
+## Add Effector to Drones
 
 **Add Effector Color**
 
@@ -272,9 +272,7 @@ In the 3D Viewport, select Menu Bar **Add** -> **Object** -> **Parent** -> **Obj
 ---
 
 
-
-
-## Flight Check of the drones 
+## Flight Check
 
 * **Vehicle** -> **Flight Check**, make a "√" in from of the **enable**  
 ![Vimdrones Designer Drone Flight Check](/static/flight-check.jpg "Vimdrones Designer Drone Flight Check") 
@@ -286,6 +284,18 @@ In the 3D Viewport, select Menu Bar **Add** -> **Object** -> **Parent** -> **Obj
 * Play the animation in Blender, we will see those Limits realtime. When the value reach the Limits, it will appears in the window. It shows that two drones reach the limit at that frame  
 When we don't need those information, we could click the **Clear** Button
 ![Vimdrones Designer Console](/static/designer-console.png "Vimdrones Designer Console") 
+
+**Operation Video** 
+
+* [YouTube](https://youtu.be/sy3q5i0HcNo)  
+* [bilibili](https://www.bilibili.com/video/BV1QK411L72L/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sy3q5i0HcNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+---
+
+
+
 
 ## Export Animation
 
@@ -338,9 +348,11 @@ Sample Path Video [Youtube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s) | 
 
 Tips: If we select a music for the drone light show background music at first, we can create drone light effects based on the beat of the music. The music data could influences the size or color of the Effector Object. So, it is very easy to grab every beat of music and let sound, light and electricity blend together perfectly.
 ![Vimdrones Designer Music Effector](/static/music-bar.gif "Vimdrones Designer Music Effector") 
+---
 
+## Example
 
-## Add Line Font Text
+**Example 1: Add Line Font Text**
 
 **Installation**
 
@@ -367,3 +379,21 @@ Tips: If we select a music for the drone light show background music at first, w
 * [bilibili](https://www.bilibili.com/video/av96248595/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZhzBpmudwIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+---
+
+**Example 2: Add Text**
+
+* Open Blender through Vimdrones Designer. A -> X -> D, delete all the objects
+* Add -> Text, we could see Text in the 3D view. R -> X -> 90 (Rotate 90 ° along the X axis)
+* Change to Edit mode, delete and enter text
+* Click Object Data Properties tab, Font -> Open Font, open the file to set the font. Geometry -> Extrude. Font -> Transform -> Size  
+* Change to Object mode, Object -> Convert to -> Mesh from Text
+* Click Modifier Properties tab, Add Modifier -> Remesh. Remove the “√” of Remove Disconnected Pieces. We could set the Octree Depth & Scale. Click Apply the Modifier
+
+**Operation Video** 
+
+* [YouTube](https://youtu.be/3Mx-XTYJFS4)  
+* [bilibili](https://www.bilibili.com/video/BV18E411w7Ls/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3Mx-XTYJFS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
