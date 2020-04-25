@@ -295,8 +295,6 @@ When we don't need those information, we could click the **Clear** Button
 ---
 
 
-
-
 ## Export Animation
 
 ![Vimdrones Designer Export](/static/export-panel.png "Vimdrones Designer Export") 
@@ -397,3 +395,20 @@ Tips: If we select a music for the drone light show background music at first, w
 * [bilibili](https://www.bilibili.com/video/BV18E411w7Ls/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3Mx-XTYJFS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+---
+**Example 3: Add QR code drone formation**
+
+* Online Generate the QR code. Download the QR code image.   
+  [QR Code generator](https://www.unitag.io/qrcode)
+* Open Blender in Vimdrones Designer. Add -> Empty -> Image. Click Object Data tab in the Properties window. Open and browse to your image
+* Add -> Mesh -> Plane. Choose Display the Object as wire edges. Scaling the QR code makes it as big as Plane. Press tab to Edit Mode. Loop Cut the Plane and make one edge correspond to a row/column of dots
+* Now we could add a drones Vertex Group. Select those vertices on the QR code dots and Assign the vertices to the drones Vertex Group. Add a New Material Collection and rename it as QR code. Drag the Plane to the QR code Collection. Save the Blender file.
+* File -> Append, append the QR code Collection to Blender which it’s designing the show. We to start to make the QR code drone formation.
+
+**Operation Video** 
+
+* [YouTube](https://youtu.be/wfewJdC3OhE)  
+* [bilibili](https://www.bilibili.com/video/BV1k54y1Q77C/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wfewJdC3OhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
