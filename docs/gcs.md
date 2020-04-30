@@ -89,7 +89,7 @@ By default the system shipped with pre config Mazzy Star Drone™, when you boug
 * Satellite name
 * Satellite flag
 
-**RKT Base Status**
+**RTK Base Status**
 
 ![Ground Station Interface](/static/gcs-rtk-base.png "Ground Station Interface")
 
