@@ -30,24 +30,44 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
     * Please charge the battery fully（according to the flight time, the voltage is at less 8.2V)
 * Drone preparation
     * Please check the number the drones 
-    * Please check the airframe od the drones, especially for the propeller guard, propeller and the motor
+    * Please check the airframe of the drones, especially for the propeller guard, propeller and the motor
 * Flight Path preparation
     * Use Vimdrones Designer to design the Flight path, save the .blend file and export the data
-
+    * **Usage Warming:**   
+    Do not let the drone collide when design the Flight path. The distance between drones should need more than 2m  
+    Do not let the drone exceed the speed limit when design the Flight path. Max Vertical Velocity (Up To) is 3m/s, Max Horizontal Velocity (Up To) is 4m/s. It is recommended that the flying speed of the drone is below 2m/s.    
+    Do not let the drone beyond the fence when design the Flight path   
 
 ## Pre-Flight Setup Procedure
+
+**Drone Light Show System Communication:**  
+
 * Power the wifi router, connect the wifi router and PoE power supply with a network cable 
 * Place the tripod，setup the RTK Base and the antenna, use the Feeder to connect the RTK Base and the antenna
 * Connect the RTK Base to PoE power supply with a network cable  (so the wifi router can communicate with the RTK base)
 * Power the RTK Base through the PoE power supply
 * Power the radio transmitter
-* Place and locate drones, the distance between each drone no less than 2 m
-* Insert the batteries to the drones, but not power the drones 
 
 ![Drone Light Show System](/static/drone-light-show-system-communication-diagram.jpg "Drone Light Show System") 
 
+----
 
-## Ground Station Setup Procedure
+**Drone Light Show System Layout:**  
+
+* Place and locate drones, the distance between each drone no less than 2 m
+* Insert the batteries to the drones, but not power the drones   
+
+**Usage Warning:**  
+
+* Do not have the show near people too close or over people’ head   
+* Should have the show in an open space without high obstacles   
+* Should make sure of good order inside the venue without any interference or disruption when having the show  
+
+![Drone Light Show System](/static/drone-layout.jpg "Drone Light Show System") 
+
+----
+
+## Flight Procedure
 Run Vimdrones GCS on computer  
 1. When the RTK Base is enter, click **Survey In** button   
 2. Waiting for Survey In ready, **Survey in(Success)**  
@@ -78,7 +98,7 @@ Run Vimdrones GCS on computer
 
 
 
-## How to Arm Mazzy Star Drone with Remote Control
+## Arm Mazzy Star Drone with Remote Control
 
 ![Remote Control](/static/transmitter-controls.jpg "Remote Control") 
 
@@ -86,9 +106,13 @@ Run Vimdrones GCS on computer
 
 * [DXe Transmitter Manual – Multilingual](https://www.spektrumrc.com/ProdInfo/Files/SPM1000-manual-MULTI.pdf)  
 
+**Usage Warning:**  
+
+* Do not arm the drone near people too close   
+* Do not arm the drone over people’ head  
 
 
-## About 2s-3000mAh LiPo battery
+## Mazzy Star Drone battery
 
 * Its capacity is 3000 mAh and the rated voltage is 8.7V. 
 * Charger light will turn red from green light, while the battery is fully charged. 

@@ -1,7 +1,7 @@
 
 ## Installation
-* Install [Blender 2.8](https://www.blender.org/download/releases/2-80/) on your computer, Mac OS or Windows
-* [Get Your Designer Software](https://www.vimdrones.com/contact)
+* Install [Blender 2.8](https://www.blender.org/download/) on your computer, Mac OS or Windows
+* [Get Your Designer Software](https://vimdrones.com/en/products/7125cd54-c5ff-48b9-9e5c-bddf17875926--Vimdrones-Drone-Light-Show-Designer-Software)
 
 **Mac**
 
