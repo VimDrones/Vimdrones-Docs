@@ -98,7 +98,7 @@ Run Vimdrones GCS on computer
 
 
 
-## Arm Mazzy Star Drone with Remote Control
+## Remote Control
 
 ![Remote Control](/static/transmitter-controls.jpg "Remote Control") 
 
@@ -112,10 +112,9 @@ Run Vimdrones GCS on computer
 * Do not arm the drone over people’ head  
 
 
-## Mazzy Star Drone battery
+## Battery
 
 * Its capacity is 3000 mAh and the rated voltage is 8.7V. 
-* Charger light will turn red from green light, while the battery is fully charged. 
 
 **Battery Charging and Discharging**
 
@@ -136,3 +135,24 @@ Run Vimdrones GCS on computer
 * Battery must be fully charged and discharged routinely every three month. After battery is fully discharged, recharge the battery to 50% capacity 
 
 
+## Battery Charger
+
+* 2S Li-ion HV Battery Charger, 8.7V/1.5A*10Channel
+* Input: AC100~240V 50/60Hz 3A(Max) 
+* Output: DC8.7V/1.5A*10Channel
+
+**Instruction**
+
+* Connecting battery with charger, making sure the positive of battery connecting with the positive of charger, the negative of battery connecting with the negative of charger.
+* Plug charger in DC power outlet, LED turns to RED, the charging is starting.
+* The charging finish once LED turns to GREEN. After charging, make sure unplug charger from DC power outlet.
+* Disconnecting battery with charger. 
+    * Note: battery may become hot after charging.
+
+
+**Usage Warning**
+
+* Don't short circuit charger  
+* Use the charger to charge correct battery  
+* Don't cover charger and battery during charging  
+* Don't charge battery unattended   
