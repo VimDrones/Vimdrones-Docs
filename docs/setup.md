@@ -1,3 +1,55 @@
+
+## Mazzy Star Drone Introduction
+Mazzy Star Drone is designed for drone light show, featuring a full-colour RGB LED, intelligent flight mode and high precision positioning system. It equips with RTK GPS positioning system and multiple control channels communication system to ensure a stable and safe formation flight.
+Mazzy Star Drone has full size propeller guard and only 0.46kg armed weight. The maximum time hover time is up to 18 minutes. For the revolutionary design, Mazzy Star Drone significantly reduce safety risks compared to other drones on the market.
+
+**Feature Highlights**
+
+* Compact, durable and light airframe, full-size propeller guard
+* Only 0.46kg armed weight, up to 18-min flight time
+* Full-colour RGB LED in high brightness, up to 640LM
+* Ground control software with Realtime 3D video preview
+* High precision RTK GPS
+* Radio transmit, 915/868HMz, 3km Long Range Control
+* WIFI transmit, 2.4G, 200m Long Range Control
+* Remote Control, 2.4G
+* Drone light show Ground Control Station Software “Vimdrones GCS” --with efficient drone dashboard, enables
+flexible configuration and development
+* Drone light show design software “Vimdrones Designer”--Blender Add-on
+
+**Aircraft Diagram**
+
+![Mazzy Star Drone](/static/aircraft.png "Mazzy Star Drone")
+
+**Technical Specifications**
+
+<style>
+table th:first-of-type {
+    width: 22%;
+}
+table th:nth-of-type(2) {
+    width: 78%;
+}
+</style>
+
+| Drone Specs        |Details           |
+| : --------------------- |:-------------|
+| Airframe      | Compact, durable and light airframe, full size propeller guard | 
+| Weight      | 460± g with 2S 3000mAh battery |
+| Body Dimension | 340x340x80 mm | 
+| Motor and Prop | 2300 kV brushless motors; 6 inch carbon fiber propeller |   
+| Max Hover Time | 18mins |
+| Wind Resistibility | < 7 m/s |   
+| Positioning System | RTK GPS (GPS+GLONASS+Beidou), 2 cm precision with RTK fixed |  
+| Battery | LiPo2S, 7.6V, 3000-mAh |  
+| Remote Control | 6-channel 2.4G radio remote controller (1km distance, optional) |  
+| Ground Antenna | 915/868 MHz 1000 mW, communication range 3km |
+| Drone Antenna | 915/868 MHz 20 mW, communication range, 2km |
+| LED | Integrated full-color RGB LED, 4W |
+| Charger | high-power 2S LiPo battery balance charger; 10 charging holes;<br>Input: AC100~240V 50/60Hz,3A(Max); Output: DC8.7 V 1.5A 10 groups | 
+| Accessory | Foam box 1 (420x420x148mm) |  
+
+
 ## Ready To Fly List
 * Mazzy Star Drone (include the package)
 * Mazzy Star Drone Battery
@@ -46,10 +98,16 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
 * Place the tripod，setup the RTK Base and the antenna, use the Feeder to connect the RTK Base and the antenna
 * Connect the RTK Base to PoE power supply with a network cable  (so the wifi router can communicate with the RTK base)
 * Power the RTK Base through the PoE power supply
-* Power the radio transmitter
+* The radio transmitter(Backup)
 
 ![Drone Light Show System](/static/drone-light-show-system-communication-diagram.jpg "Drone Light Show System") 
 
+**Operation Video**
+
+* [YouTube](https://youtu.be/iSv-nGm3Wn8)
+* [bilibili](https://www.bilibili.com/video/BV1Xz411e7Wh/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iSv-nGm3Wn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ----
 
 **Drone Light Show System Layout:**  

@@ -80,7 +80,9 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 * **Led** -> **Settings**, remove the "√" in from of use_nodes, then click **update**  
 ![Vimdrones Designer Create Drone Team](/static/create-drone-team-no-use-node.png "Vimdrones Designer Create Drone Team")
 
-**Pay attention**: once you select use_nodes to start a project, don't change it to no use_nodes. Similarly, once you select no use_nodes, don't change it to use_nodes. These two modes are not compatible in a same project.
+**Pay attention(very important!)** 
+
+ Once you select use_nodes to start a project, don't change it to no use_nodes. Similarly, once you select no use_nodes, don't change it to use_nodes. These two modes are not compatible in a same project.
 
 **Operation Video** 
 
