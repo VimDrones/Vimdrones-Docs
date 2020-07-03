@@ -98,7 +98,7 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
 * Place the tripod，setup the RTK Base and the antenna, use the Feeder to connect the RTK Base and the antenna
 * Connect the RTK Base to PoE power supply with a network cable  (so the wifi router can communicate with the RTK base)
 * Power the RTK Base through the PoE power supply
-* The radio transmitter(Backup)
+* Place the Remote Controller(Backup)
 
 ![Drone Light Show System](/static/drone-light-show-system-communication-diagram.jpg "Drone Light Show System") 
 
@@ -130,7 +130,7 @@ Run Vimdrones GCS on computer
 1. When the RTK Base is enter, click **Survey In** button   
 2. Waiting for Survey In ready, **Survey in(Success)**  
 3. Click **Open** button, Select Design Project   
-4. Power on Mazzy Star Drones, red light flashing 
+4. Power on Mazzy Star Drones, white light fast flashing -> red light flashing 
 5. Mazzy Star Drone online, we can see the Drone Status on GCS  
 6. Drone Status Check Pass, yellow light flashing  
 7. Click **Upload** button, upload trajectory Design to the drones, white light fast flashing  
@@ -149,7 +149,7 @@ Run Vimdrones GCS on computer
 
 
 ## Post-Flight Setup Procedure
-* Unplug the batteries of the drones to the package (charge them for the next drone light show)
+* Unplug the batteries of the drones to the package
 * Put the drones into the packages, then stack up the packages and tie them up with a buckle
 * Pack up the Drone Light Show System into the package
 * Pack up the remaining equipment

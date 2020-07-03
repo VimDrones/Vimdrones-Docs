@@ -1,13 +1,13 @@
+## Introduction
 
-## Installation
-* Install [Blender 2.8](https://www.blender.org/download/) on your computer, Mac OS or Windows
-* [Get Your Designer Software](https://vimdrones.com/en/products/7125cd54-c5ff-48b9-9e5c-bddf17875926--Vimdrones-Drone-Light-Show-Designer-Software)
+**Feature Highlights**
 
-**Mac**
-
-* Double click the [Vimdrones Designer-x.x.x.dmg], pull the **Vimdrones Designer icon** to the **Applications file**. 
-* Double click the icon to open the Vimdrones Designer  
-![Vimdrones Designer Installation](/static/installation-mac.jpg "Vimdrones Designer Installation")  
+* Rich Color Design
+* 3D Animation
+* Smart Formation Transform
+* With Sound Track System to Synchronize
+* Music and Light
+* Easy Marketing Design
 
 
 ## System requirements
@@ -21,19 +21,41 @@ System requirements for Vimdrones Designer Software:
 * Network: TCP/IPv4 network stack, WiFi or Ethernet. Recommended Ethernet
 
 
+## Installation
+* Install [Blender 2.8](https://www.blender.org/download/) on your computer, Mac OS or Windows
+* [Get Your Designer Software](https://vimdrones.com/en/products/7125cd54-c5ff-48b9-9e5c-bddf17875926--Vimdrones-Drone-Light-Show-Designer-Software)
+
+**Download**
+
+* Open our website [Vimdrones](https://vimdrones.com/en/),click **Login**
+* Already has an account, please **Sign In**. Don't have an account, Please **Sign Up** and then **Sign In**
+
+![Vimdrones Designer Installation](/static/login.png "Vimdrones Designer Installation")  
+
+* Select the version **Mac Os** or **Windows** to download the software
+
+![Vimdrones Designer Installation](/static/download-software.jpeg "Vimdrones Designer Installation") 
+
+
+**Mac**
+
+* Double click the [Vimdrones Designer-x.x.x.dmg], pull the **Vimdrones Designer icon** to the **Applications file**. 
+* Double click the icon to open the Vimdrones Designer  
+![Vimdrones Designer Installation](/static/installation-mac.jpg "Vimdrones Designer Installation")  
+
 
 ## Active License
 * Type your emaiL and token, click **Active** Button
 ![Vimdrones Designer Active License](/static/active-license.png "Vimdrones Designer Active License")
     *  Click [DOCUMENT](https://docs.vimdrones.com/gcs) to open Vimdrones Designer Doc
     *  Click [ABOUT](https://vimdrones.com/) to open our official website
-  
-   
+
+
 * Click the file icon on the Upper right corner to open the Blender Path where you installation 
 * Then click **OPEN BLENDER** Button  
-![Vimdrones Designer Open Blender](/static/open-blender.jpg "Vimdrones Designer Open Blender")
-    * Click **LOGOUT** to logout
-    * Click **CONSOLE** to open the flight check console
+![Vimdrones Designer Open Blender](/static/open-blender.jpg "Vimdrones Designer Open Blender")    
+    *  Click **LOGOUT** to logout   
+    *  Click **CONSOLE** to open the flight check console
   
 * Press **N** to show/hide **Properties**
 ![Vimdrones Designer Open Blender](/static/blender_interface.jpg "Vimdrones Designer Open Blender")
@@ -42,12 +64,17 @@ System requirements for Vimdrones Designer Software:
 * Open Blender 2.8, **New File** -> **General**
 * Press **A** to select all the objects in the 3D Viewport, then press **X**, **D** to delete the objects
 
+More details about [Keymap](https://docs.blender.org/manual/en/latest/interface/keymap/blender_default.html)
+
 **From Blender To Real World**  
 
 * Blender and Real World axis relationship shown as below
-![Vimdrones Designer Geo Basic](/static/geo-basic.png "Vimdrones Designer Geo Basic")
+![Vimdrones Designer Geo Basic](/static/geo-basic.png "Vimdrones Designer Geo Basic")  
+     ![Vimdrones Designer Geo Basic](/static/drone-placement-direction.jpg "Vimdrones Designer Geo Basic")
 
 * drone light show design is based on 24 FPS which means 1s run 24 frames, this value should not be changed unless you know what you are doing
+
+
 ## Create Drone Team
 * **Vehicle** -> **New Team** -> **Create**
 ![Vimdrones Designer Create Drone Team](/static/create-drone-team.png "Vimdrones Designer Create Drone Team")
@@ -104,6 +131,11 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 * Set the Current Frame -> 600 (for example; 600 means 25s, press Ctrl/Command T to change time form)<br> 
   Move the Empty Objects to Z:50m (for example), insert keyframe
 
+What is Begin and Append
+
+* **Begin**: The frame that the drones begin to change the formation
+* **Append**: The frame that the drones reach the location of the new formation(Empty Objects collection)
+
 **Operation Video** 
 
 * [YouTube](https://youtu.be/Y_rdntjSmb8)  
@@ -119,7 +151,7 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 **Create Drones Vertex Group**
 
 * Select the Mesh Object(E.g **Cube**),change **Object Mode** to **Edit Mode**
-* In the **Properties** Editor, click **Object Date** tab, click the Button "+" on the right Panel border to add a Vertex Group, double-click the "Group" name and edit to "drones"
+* In the **Properties** Editor, click **Object Date** tab, click the Button "+" on the right Panel border to add a [Vertex Group](https://docs.blender.org/manual/en/latest/modeling/meshes/properties/vertex_groups/assigning_vertex_group.html), double-click the "Group" name and edit to "drones"
 * Select the vertices of the Mesh Object (one vertex represents one drone), click **Assign** Button below the Panel<br> 
 ![Vimdrones Designer Add Vertex Group](/static/vertex-edit.jpg "Vimdrones Designer Add Vertex Group")
     * We could use the tools on the left to edit the vertices. Or from the Menu Bar **[Vertex](https://docs.blender.org/manual/en/2.81/modeling/meshes/editing/vertices.html#)** to edit the vertices. <br> 
@@ -141,10 +173,15 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 * **Formation** -> **New Material Collection** -> **New**, create New Material Collection in the outline Editor. Double-click the collect to rename it(E.g **Cube Material**)
 * Select the Mesh Object(E.g **Cube**) which has the Drones Vertex Group, move it to the Material Collection(E.g **Cube Material**)
     * We could add more Mesh Objects to the Material Collection. These Mesh Objects should also have **drones** Vertex Group. That's much easier for us to design the drone scene.
-    * **File** -> **Append/Import**  
+    * **File** -> **[Append](https://docs.blender.org/manual/en/latest/files/linked_libraries/introduction.html)/[Import](https://docs.blender.org/manual/en/latest/files/import_export.html)**  
     We can append/import the objects from other files and use them as the Material of drone scene. For example, if we import svg. files, we should convert them to Mesh(**Object** -> **Convert to** -> **Mesh from Curve/Meta/Surf/Text** in the Menu bar)
-* **Formation** -> **Vertex Formation**, select the formations(E.g **Cube Formation**) and its corresponding material_collections(E.g **Cube Material**). Click the **Append** Button. The Empty Objects in the formation will reach the location of the "drones" Vertex Group
+* **Formation** -> **Vertex Formation**, select the formation(E.g **Cube Formation**) and its corresponding material_collections(E.g **Cube Material**). Click the **Append** Button. The Empty Objects in the formation will reach the location of the "drones" Vertex Group
+
+What's the **Append** mean in here?  
+The Empty Objects in the select formation will copy the location of the vertices in the "drones" group of the select Material 
+
 ![Vimdrones Designer Formation Changing](/static/formation-changing.jpg "Vimdrones Designer Formation Changing")
+
 * In the Timeline Editor, set up the Current Frame to begin the new scene<br>
 **Formation** -> **Append**, select formations(E.g **Cube Formation**) , click **Begin** Button
 * In the Timeline Editor, set up the Current Frame to finish the new scene changing<br>
@@ -157,6 +194,8 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 
 * Select the Mesh Object in the material collections, **Item** -> **Transform**. You could add keyframe of Location, Rotation or Scale to add animation of teh Mesh Object, so the Drone Scene can be transformed.
 * You could also deform the Object vertices or control points, or add Inherited animation(E.g armature) to the Object to make the animation. The Object has the animation, then the Drones have the animation.
+
+More details about [Animation](https://docs.blender.org/manual/en/latest/animation/introduction.html)
 
 **Operation Video** 
 
@@ -231,7 +270,7 @@ In the 3D Viewport, select Menu Bar **Add** -> **Object** -> **Parent** -> **Obj
 
 **Transform Effector**  
 
-* When we transform the Empty, so the Mesh transform. Now we can add some animation to the Empty Effector. When the drones inside the Empty, the color of these drones will be changed to the color of the Mesh. 
+* When we transform the Empty Effector, so the Mesh transform. Now we can add some animations to the Empty Effector. When the drones inside the Empty, the color of these drones will be changed to the color of the Mesh. 
 ![Vimdrones Designer Effector](/static/effector.jpg "Vimdrones Designer Effector") <br>
 
 * If we add more Effectors to the drones at the same time, the color of drones will depend on the latest Effector

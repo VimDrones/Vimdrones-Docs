@@ -1,13 +1,14 @@
-## Installation
-Install Vimdrones GCS on your computer, Mac OS or Windows
+## Introduction
 
-**Mac**
+Vimdrones Ground Control Station(GCS) Software could control thousands of drones in flight to have the drone light show. In GCS, open the Design Project(designed and exported in Vimdrones Designer) and upload the data to all drones. It could display real-time data on the drone's performance and position. When drone status is ready and setting parameters, click Takeoff to start our Drone Light Show.
 
-* Double click the [Vimdrones_GCS-x.x.x.dmg], pull the **Vimdrones GCS icon** to the **Applications file**. 
-* Double click the icon to open the Vimdrones GCS
-![Installation Mac](/static/installation-gcs-mac.jpg "Installation Mac")
+**Feature Highlights**
 
-
+* Easy Usage Control thousands of drones just need one person
+* Efficient Drone Dashboard
+* Can run on multi PC for teamwork
+* RealTime 3D position view
+* Takeoff Countdown
 
 ## System requirements
 
@@ -19,6 +20,26 @@ System requirements for Ground Station Software:
 * Hard drive: SSD 120 GB. Recommended 256GB or more
 * Network: TCP/IPv4 network stack, WiFi or Ethernet. Recommended Ethernet
 
+
+## Installation
+Install Vimdrones GCS on your computer, Mac OS or Windows
+
+**Download**
+
+* Open our website [Vimdrones](https://vimdrones.com/en/),click **Login**
+* Already has an account, please **Sign In**. Don't have an account, Please **Sign Up** and then **Sign In**
+
+![Vimdrones Designer Installation](/static/login.png "Vimdrones Designer Installation")  
+
+* Select the version **Mac Os** or **Windows** to download the software
+
+![Vimdrones Designer Installation](/static/download-software.jpeg "Vimdrones Designer Installation") 
+
+**Mac**
+
+* Double click the [Vimdrones_GCS-x.x.x.dmg], pull the **Vimdrones GCS icon** to the **Applications file**. 
+* Double click the icon to open the Vimdrones GCS
+![Installation Mac](/static/installation-gcs-mac.jpg "Installation Mac")
 
 ## Adding new Mazzy Star Drone™ to the system
 By default the system shipped with pre config Mazzy Star Drone™, when you bought new Mazzy Star Drone™ in later orders to extend the business show scale, you will need to follow these steps to add it to current system
