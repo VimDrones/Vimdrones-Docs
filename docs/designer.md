@@ -1,14 +1,18 @@
 ## Introduction
 
+The Vimdrones Designer is an Add-on of Blender that uses for Dorne Light Show Flight Path Design. It could create any figures, like 2D or 3D animation, even with music beats. For its efficiently handling the transformation between drone formations and lighting effects, we could focus more on the drone light show design itself. 
+
 **Feature Highlights**
 
-* Rich Color Design
-* 3D Animation
+* One-click Formation
 * Smart Formation Transform
+* Flight Check to Avoid Collision
+* 3D Animation
+* Rich Color Design
+* Support Multiple file formats Import
 * With Sound Track System to Synchronize
 * Music and Light
 * Easy Marketing Design
-
 
 ## System requirements
 

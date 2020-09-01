@@ -123,6 +123,14 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
 
 ![Drone Light Show System](/static/drone-layout.jpg "Drone Light Show System") 
 
+**Operation Video**
+
+* [YouTube](https://youtu.be/ZKN7bdUU3XM)
+* [bilibili](https://www.bilibili.com/video/BV1uC4y1t7iV/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZKN7bdUU3XM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ----
 
 ## Flight Procedure
