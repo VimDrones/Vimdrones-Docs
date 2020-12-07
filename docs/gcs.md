@@ -175,7 +175,10 @@ IP: Drone's ip address in network
 
 
 **Vibration Status**  
-Drone X/Y/Z axis Vibration value(should be under 30, otherwise may have motor broken issue)
+When in the guided mode or manual control by RC, please check in the GCS  
+    --Drone X/Y/Z axis Vibration value should be under 30   
+    --Clip value should be under 50 | 200 |   
+Otherwise may have propeller/motor broken issue!         
 
 **Battery Status**  
 Voltage: When the voltage drops to 7.2V, the drone will automatically return to launch  
@@ -194,7 +197,7 @@ Token: The same as the Project Token
 * Mag Cal (drone mag calibration) 
 * ESC Cal (drone esc calibration)
 * Motor Test (drone motor testing)
-* Radio Bind (binding drone to the RC controller)
+* RC Bind (binding drone to the RC controller)
 * Rescue (Enable drone's RC control to manual control by RC controller)
 * RTL (Set drone to RTL mode)
 * Land (Set drone to LAND mode)
@@ -234,6 +237,7 @@ lat/lon/alt
 
 It shows the select drone's log system
 
+
 **LED Control**
 
 ![Ground Station Interface](/static/gcs-led-control.png "Ground Station Interface")
@@ -250,6 +254,12 @@ Select the color, set the diffuse color(LED brightness), click **Update** button
 
 * Turn On: Click the time to set the takeoff time, then click the **Turn On** button to finish the setting. The **Turn On** button will change to **Turn OFF** button, you could it to shut down the countdown setting.  
 * Takeoff: When everything id Ok, Click the **Takeoff** button to begin your drone light show
+---
+
+## Realtime 2D position view
+Click **Map** to view drone's real time 2D position 
+When you click the drone in the view, it will show its Status in the 
+![RealTime 2D position view](/static/gcs-map.jpg "RealTime D position view")
 
 
 ---
@@ -274,8 +284,4 @@ Click **Open Realtime 3D View** to view drone's real time 3D position
 * [bilibili](https://www.bilibili.com/video/av87958242/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nBi81nieGS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
- 
- 
-  
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-The Vimdrones Designer is an Add-on of Blender that uses for Dorne Light Show Flight Path Design. It could create any figures, like 2D or 3D animation, even with music beats. For its efficiently handling the transformation between drone formations and lighting effects, we could focus more on the drone light show design itself. 
+The Vimdrones Designer is an Add-on of Blender that uses for Drone Light Show Flight Path Design. It could create any figures, like 2D or 3D animation, even with music beats. For its efficiently handling the transformation between drone formations and lighting effects, we could focus more on the drone light show design itself. 
 
 **Feature Highlights**
 
@@ -55,17 +55,23 @@ System requirements for Vimdrones Designer Software:
     *  Click [ABOUT](https://vimdrones.com/) to open our official website
 
 
+  
 * Click the file icon on the Upper right corner to open the Blender Path where you installation 
 * Then click **OPEN BLENDER** Button  
 ![Vimdrones Designer Open Blender](/static/open-blender.jpg "Vimdrones Designer Open Blender")    
     *  Click **LOGOUT** to logout   
     *  Click **CONSOLE** to open the flight check console
   
-* Press **N** to show/hide **Properties**
+* Press **N** to show/hide **Properties**, it will shows the Designer tabs(Vehicle, Led, Fomation, Flight Check)
 ![Vimdrones Designer Open Blender](/static/blender_interface.jpg "Vimdrones Designer Open Blender")
+
+**Pay Attention:**  
+* Please make sure your device is connected to the network when active the licence. Some functions also need network when using Vimdrones Designer
+* It needs to click **OPEN BLENDER** Button Vimdrones Designer to open Blender  
+
   
 ## Getting started Blender
-* Open Blender 2.8, **New File** -> **General**
+* Open Blender, **New File** -> **General**
 * Press **A** to select all the objects in the 3D Viewport, then press **X**, **D** to delete the objects
 
 More details about [Keymap](https://docs.blender.org/manual/en/latest/interface/keymap/blender_default.html)
@@ -191,6 +197,9 @@ The Empty Objects in the select formation will copy the location of the vertices
 * In the Timeline Editor, set up the Current Frame to finish the new scene changing<br>
 **Formation** -> **Append**, click **Append** Button. Move the Playhead, we could see how the drone scene change(make sure the **auto resign** have been "√")
 
+What's the **auto resign** mean in here?  
+Through the algorithm, the drone will be automatically assigned to a suitable position in the next formation, making the overall distance of movement the shortest. 
+
 ![Vimdrones Designer Formation Append](/static/append-3d-eagle.gif "Vimdrones Designer Formation Append")
 
 
@@ -209,6 +218,23 @@ More details about [Animation](https://docs.blender.org/manual/en/latest/animati
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hvQPp3ziviU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
 ---
+
+**About drone formation management**
+* We use empties(Copy New Formation)and material(New Material Collection) to manage the drone formation. 
+The keyframe is added on the empties when Takeoff and land, others are suggested to add on the Material objects.  
+
+* Keyframe:   
+    * On drone:   
+    Formation -> Append -> Begin and Append. After Append, the drone will follow movement of the empty(New Formation).  
+    Led -> Led Magic -> Preview -> Add keyframe  
+    * On Empty:  
+      Begin Scene & Smart Landing Formation 
+    * On material Object:
+      After Vertex Formation -> Append, the empty will follow movement of the material. 
+
+      So each formation is individually added with keyframe. When you want to adjust the formation, you can reuse the material(file -> Append). It is quickly to redo the project. Otherwise, if all keyframes are added on the drones, it is hard to when you want to re-edit. Maybe it needs to restart the project. 
+
+
 
 
 ## Smart Land
@@ -316,6 +342,21 @@ In the 3D Viewport, select Menu Bar **Add** -> **Object** -> **Parent** -> **Obj
 
 ---
 
+**About the drone color**
+
+* The LED light could be off (black) when the drones take off. Also, it needs to add a color keyframe to the drones at the beginning. Otherwise, if you add an effector, it will directly affect the color of the drones at the beginning.  
+
+* Add color  
+    * Led -> Led Magic -> Preview -> Add keyframe  
+      The color keyframe is on the drones.  We could check the keyframe on the Timeline. The drones will store the color material of the Base Color.  
+    * Add Effector Color
+      These is no color keyframe on the drones, but the Effector object will store the color material of the Base Color, also the animation keyframe. In a new project, you could use file -> Append to import the Effector objects.
+
+
+
+
+
+
 
 ## Flight Check
 
@@ -329,6 +370,12 @@ In the 3D Viewport, select Menu Bar **Add** -> **Object** -> **Parent** -> **Obj
 * Play the animation in Blender, we will see those Limits realtime. When the value reach the Limits, it will appears in the window. It shows that two drones reach the limit at that frame  
 When we don't need those information, we could click the **Clear** Button
 ![Vimdrones Designer Console](/static/designer-console.png "Vimdrones Designer Console") 
+
+* Open the console when you do the design and check the speed and distance real time. So you can adjust the speed and distance at any time based on the feedback from the console
+
+* If the distance is larger, the formation looks more stable. If the distance is close, the airflow generated by the drone will affect each other. 
+
+
 
 **Operation Video** 
 
@@ -365,6 +412,11 @@ When we don't need those information, we could click the **Clear** Button
 | Ugcs      | Drone Show Software | Outdoor | <a download href="/static/third_party_path/vimdrones-third-party_-path-raw-format.zip">Download</a> |
 | High Great | Fylo    | Indoor | <a href="#">Download</a> |
 
+**Pay Attention:**  
+For Export Ugcs, please make sure that the order of drones in the last formation is like as the begin scene. 
+
+
+
 What to add your system to the list? please [contact us](https://vimdrones.com/contact)
 
 Sample Path Video [Youtube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s) | [Bilibili](https://www.bilibili.com/video/av79197730)
@@ -389,7 +441,10 @@ Sample Path Video [Youtube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s) | 
 6. Add color & effector to the drones
 7. Export the Drone Light Show data
 
-Tips: If we select a music for the drone light show background music at first, we can create drone light effects based on the beat of the music. The music data could influences the size or color of the Effector Object. So, it is very easy to grab every beat of music and let sound, light and electricity blend together perfectly.
+
+**Tips:**
+1. Remember to save a few more backups when designing  
+2. If we select a music for the drone light show background music at first, we can create drone light effects based on the beat of the music. The music data could influences the size or color of the Effector Object. So, it is very easy to grab every beat of music and let sound, light and electricity blend together perfectly.
 ![Vimdrones Designer Music Effector](/static/music-bar.gif "Vimdrones Designer Music Effector") 
 ---
 
