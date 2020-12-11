@@ -80,9 +80,10 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
     * Please prepare a sufficient number of batteries（more than the number of drones）
     * Please charge the battery fully（according to the flight time, the voltage is at less 8.2V)    
 
-Here are some tips for using batteries at low temperatures. 
-Make sure the battery is fully charged before the flight.
-Fully preheat the battery to over 20 degrees. Battery preheaters are recommended.
+**Here are some tips for using batteries at low temperatures**
+1. Make sure the battery is fully charged before the flight.
+2. Fully preheat the battery to over 20 degrees.   
+3. Battery preheaters are recommended.
 
 * Drone preparation
     * Please check the number the drones 
@@ -163,7 +164,7 @@ Drone layout:
 When change in Z Axis Rotate in Vimdroens Designer(Real world layout)
 ![Drone Light Show System](/static/drone-layout-angle.jpg "Drone Light Show System")
 
-![Drone Light Show System](/static/Z Axis Rotate_-40.jpg "Drone Light Show System")
+![Drone Light Show System](/static/Z-Axis-Rotate_-40.jpg "Drone Light Show System")
 
 *  In default, the orientation of the formation is North. The GCS couldn't change the orientation of the drone formation. The drone will totally fly according to the designed path. If you want to change the orientation. It needs to be set in the designer software before you export the data.   
 *  Vehicle -> Export Setting -> Z Axis Rotate(degree in clockwise).    
