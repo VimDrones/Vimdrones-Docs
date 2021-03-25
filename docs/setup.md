@@ -3,6 +3,12 @@
 Mazzy Star Drone is designed for drone light show, featuring a full-colour RGB LED, intelligent flight mode and high precision positioning system. It equips with RTK GPS positioning system and multiple control channels communication system to ensure a stable and safe formation flight.
 Mazzy Star Drone has full size propeller guard and only 0.46kg armed weight. The maximum time hover time is up to 18 minutes. For the revolutionary design, Mazzy Star Drone significantly reduce safety risks compared to other drones on the market.
 
+[Drone Light Show Play list](https://youtube.com/playlist?list=PL0yTwW_bnpPIzh5wLbhtXvQPJ0GY6Isgl)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lm-ZsTvbPis" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</br>
+
 **Feature Highlights**
 
 * Compact, durable and light airframe, full-size propeller guard
@@ -10,7 +16,7 @@ Mazzy Star Drone has full size propeller guard and only 0.46kg armed weight. The
 * Full-colour RGB LED in high brightness, up to 640LM
 * Ground control software with Realtime 3D video preview
 * High precision RTK GPS, 2 cm precision with RTK fixed
-* Radio transmit, 915/868MHz, 3km Long Range Control
+* Radio transmit, 915MHz/868MHz/2.4GHz, 3km Long Range Control
 * WIFI transmit, 2.4G, 120m Long Range Control
 * Remote Control, 2.4G, 1km distance
 * Drone light show Ground Control Station Software “Vimdrones GCS” --with efficient drone dashboard, Realtime 2D&3D video preview, enables flexible configuration and development
@@ -42,8 +48,8 @@ table th:nth-of-type(2) {
 | Positioning System | RTK GPS (GPS+GLONASS+Beidou), 2 cm precision with RTK fixed |  
 | Battery | LiPo2S, 7.6V, 3000-mAh |  
 | Remote Control | 6-channel 2.4G radio remote controller (1km distance, optional) |  
-| Ground Antenna | 915/868 MHz 1000 mW, communication range 3km |
-| Drone Antenna | 915/868 MHz 20 mW, communication range, 2km <br>2.4G, communication range, 120m |
+| Ground Antenna | 915MHz/868MHz/2.4GHz 1000 mW, communication range 3km |
+| Drone Antenna | 915MHz/868MHz/2.4GHz 20 mW, communication range, 2km <br>2.4G, communication range, 120m |
 | LED | Integrated full-color RGB LED, 4W |
 | Charger | high-power 2S LiPo battery balance charger <br>10 charging holes <br>Input: AC100~240V 50/60Hz,3A(Max) <br> Output: DC8.7 V 1.5A 10 groups | 
 | Accessory | Foam box 1 (420x420x148mm) |  
@@ -55,18 +61,17 @@ table th:nth-of-type(2) {
 * Mazzy Star Drone Battery Charger
 * Vimdrones Drone Light Show System     
     * 1 Vimdrones Smart RTK Base Station
-    * 1 Wifi Router (One router per 100 drones)
+    * 1 Wifi Router, 220V
     * 1 Spektrum Transmitter 
     * 1 Tripod
-    * 1 915/868MHz Antenna
+    * 1 915MHz/868MHz/2.4GHz Antenna
     * 1 Feeder
-    * 1 PoE power supply
+    * 1 PoE power supply, 220V 
     * 3 Network Cables
 * Vimdrones Drone Light Show Designer Software
 * Vimdrones Ground Station Software
-![Ready To Fly List](/static/drone-light-show-equitment.jpg "Ready To Fly List")
 
-Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vimdornes Drone Light Show System.pdf</a>
+![Ready To Fly List](/static/drone-light-show-equitment.jpg "Ready To Fly List")
 
 **Other Additional Equipment**    
 
@@ -74,6 +79,10 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
 * Some of the Power Strips  
 * A set of foldable desk and chair (would be very good) 
 
+Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vimdornes Drone Light Show System.pdf</a>
+
+
+</br>
 
 ## Pre-Flight Preparation
 * Battery preparation
@@ -95,9 +104,12 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
     --Drone X/Y/Z axis Vibration value should be under 30  
     --Clip value should be under 50 | 200 |  
 
+<//br>
+
 * Flight Path preparation
     * Export *Vimdrones GCS*  flight **project**   
     Use Vimdrones Designer to design the Flight path, save the .blend file and export the *Vimdrones GCS* flight data
+
 
     * **Usage Warming:**   
 
@@ -116,12 +128,14 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
 
     When the drone takes off at an altitude of about 5 meters, it will start to execute the flight path and quickly fill in the altitude. It is recommended to take off as a whole, or take off in a row. Of course, it’s not a problem to turn into graphics after takeoff, as long as it doesn’t reach the restricted speed and distance
 
-------
+
+
 **Warming:**    
 If it is raining, snowing or the wind speed is above 7m/s（bad weather）, please stop the drone light show.
 
+</br>
 
-------
+
 ## Pre-Flight Setup Procedure
 
 **Drone Light Show System Communication:**  
@@ -236,6 +250,15 @@ In some emergency situations, we could use the remote control to control the dro
 * Do not arm the drone near people too close   
 * Do not arm the drone over people’ head  
 
+**Operation Video**
+
+* [YouTube](https://youtu.be/BS5PN4v3c20)
+* [bilibili](https://www.bilibili.com/video/BV185411P7wj?share_source=copy_web)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BS5PN4v3c20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</br>
+
 
 ## Battery
 
@@ -282,8 +305,9 @@ In some emergency situations, we could use the remote control to control the dro
 * Don't cover charger and battery during charging  
 * Don't charge battery unattended   
 
+</br>
 
----
+
 ## Get Log 
 
 Please download the [QGC](http://qgroundcontrol.com) software.  
@@ -292,4 +316,88 @@ Open QGC, use a micro USB cable to connect the computer to the USB port on the r
 Downloading and Analyzing Data Logs in [Mission Planner](https://ardupilot.org/copter/docs/common-downloading-and-analyzing-data-logs-in-mission-planner.html) 
 
 </br>
+
+
+
+## Repair
+
+**Tool preparation** 
+
+* A solder
+* A tweezers  
+* A screwdriver  
+* A Micro USB cable  
+* A Tin roll  
+* A drone battery  
+* A 3M Double Sided Foam
+* A laptop/computer with [QGC](http://qgroundcontrol.com) installed  
+
+
+**Repair the Body Frame**   
+
+1. Unlock the propellers with H1.5 screwdriver  
+
+2. Remove the propeller guard from 4 arms of the drone body
+
+3. Move the drone outside the propeller guard
+
+4. Remove 8 screws from 4 arms of the drone body with PH1 screwdriver.
+
+5. Remove the top cap of the drone. Pay attention there is an cable connect with GPS and the motherboard.
+
+6. Unsolder the motor cables connect with the ECS
+
+7. Remove 3 screws of the battery plug 
+
+8. Remove 2 screws of the battery case
+
+9. Remove 4 screws of the LED cover
+
+10. Remove 4 screws of motherboard
+
+11. Unlock the 2 connectors of motherboard
+
+12. Remove the motherboard, LED board, receiver
+
+13. Remove the motors
+
+14. Change the new frame
+
+15. Install the motors 
+
+16. Attach the receiver with the Foam
+
+17. Install the LED board and motherboard, connect the LED board & receiver to the motherboard
+
+18. Solder the motor cables connect with the ECS. Pay attention to the order od the cables.
+
+19. Install battery case and battery plug.
+
+20. Do the motor test
+
+21. Install the the top cap of the drone. Pay attention there is an cable connect with GPS and the motherboard
+
+22. Install 8 screws from 4 arms of the drone body with PH1 screwdriver
+
+23. Install the LED cover
+
+24. Install the propeller guard 
+ 
+25. Install the 4 propellers. Pay attention the direction of the propellers  
+
+26. Manually fly the drone for the test  
+
+
+**How to Manually Fly a Drone?**  
+
+* Setup the Vimdrones Drone Light Show System - [YouTube](https://youtu.be/iSv-nGm3Wn8)  
+* Manually Fly the Drone - [YouTube](https://youtu.be/BS5PN4v3c20)
+
+
+**Operation Video**
+
+* [YouTube](https://youtu.be/jG-_YRAtWek)
+* [bilibili](https://www.bilibili.com/video/BV18y4y117aA?share_source=copy_web)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jG-_YRAtWek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
