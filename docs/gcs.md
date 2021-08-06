@@ -4,11 +4,15 @@ Vimdrones Ground Control Station(GCS) Software could control thousands of drones
 
 **Feature Highlights**
 
-* Easy Usage Control thousands of drones just need one person
+* Easy Usage - Control thousands of drones just need one person
 * Efficient Drone Dashboard
 * Can run on multi PC for teamwork
+* RealTime 2D position view
 * RealTime 3D position view
 * Takeoff Countdown
+
+**Version**
+Vimdrones GCS (Version: V3.1.0)
 
 ## System requirements
 
@@ -20,6 +24,8 @@ System requirements for Ground Station Software:
 * Hard drive: SSD 120 GB. Recommended 256GB or more
 * Network: TCP/IPv4 network stack, WiFi or Ethernet. Recommended Ethernet
 
+Hardware requirements for Ground Station Software:
+* Display Size at least 1280*800 pxl(at least 11 inch display)
 
 ## Installation
 Install Vimdrones GCS on your computer, Mac OS or Windows
@@ -209,17 +215,18 @@ Token: The same as the Project Token
 ---
 **Project**
 
-![Ground Station Interface](/static/gcs-project-data.png "Ground Station Interface")
+![Ground Station Interface](/static/gcs-project-data.jpg "Ground Station Interface")
 
-Current: The current project name  
+Current: The current project name 
+Rotation: The current project Rotation status 
 Music: The current project music name  
 Token: The project token  
 Qty: The quantity of drones   
 Time: The drone light show duration
 
 * Open: Click **Open** button, Select Design Project 
-* Upload: Click **Upload** button, upload trajectory Design to the drones (LED lights are white light flashing) 
-
+* Upload: Click **Upload** button, upload trajectory Design to the drones (white light flashing) 
+* Upload: Click **Upload(skip success)** button, upload trajectory Design to the drones which 
 
 **Set Home**
 
@@ -240,10 +247,15 @@ It shows the select drone's log system
 
 **LED Control**
 
-![Ground Station Interface](/static/gcs-led-control.png "Ground Station Interface")
+![Ground Station Interface](/static/gcs-led-control.jpg "Ground Station Interface")
 
-Select the color, set the diffuse color(LED brightness), click **Update** button. We could control the LED Control Realtime when having the drone light show.
+Select the color, set the diffuse color(LED brightness), click **Update** icon. We could control the LED Control Realtime when having the drone light show.
 
+Light Mode：  
+* Long  
+* Breath
+* Flash
+* Quick
 
 **Takeoff**  
 
@@ -254,17 +266,27 @@ Select the color, set the diffuse color(LED brightness), click **Update** button
 
 * Turn On: Click the time to set the takeoff time, then click the **Turn On** button to finish the setting. The **Turn On** button will change to **Turn OFF** button, you could it to shut down the countdown setting.  
 * Takeoff: When everything id Ok, Click the **Takeoff** button to begin your drone light show
+
+
+**Overview**
+![Ground Station Interface](/static/gcs-overview.jpg "Ground Station Interface")
+
+
+## Settings
+
+![Ground Station Interface](/static/gcs-setting.jpg "Ground Station Interface")
+
 ---
 
 ## Realtime 2D position view
 Click **Map** to view drone's real time 2D position 
-When you click the drone in the view, it will show its Status in the 
+When you click the drone in the view, it will show its Status in the map
 ![RealTime 2D position view](/static/gcs-map.jpg "RealTime D position view")
 
 
 ---
 ## RealTime 3D position view
-Click **Open Realtime 3D View** to view drone's real time 3D position 
+Click **3D** to view drone's real time 3D position 
 
 ![RealTime 3D position view](/static/real-time-3d-position-view.png "RealTime 3D position view")
 

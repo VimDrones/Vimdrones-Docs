@@ -14,6 +14,10 @@ The Vimdrones Designer is an Add-on of Blender that uses for Drone Light Show Fl
 * Music and Light
 * Easy Marketing Design
 
+**Version**  
+Vimdrones Designer (Version: V2.0.9)    
+Vimdrones Designer (Version: V2.0.8)  
+
 ## System requirements
 
 System requirements for Vimdrones Designer Software:
@@ -26,7 +30,7 @@ System requirements for Vimdrones Designer Software:
 
 
 ## Installation
-* Install [Blender 2.8](https://www.blender.org/download/) on your computer, Mac OS or Windows
+* Install [Blender 2.8 Series or above](https://www.blender.org/download/releases/) on your computer, Mac OS or Windows，
 * [Get Your Designer Software](https://vimdrones.com/en/products/7125cd54-c5ff-48b9-9e5c-bddf17875926--Vimdrones-Drone-Light-Show-Designer-Software)
 
 **Download**
@@ -62,14 +66,17 @@ System requirements for Vimdrones Designer Software:
     *  Click **LOGOUT** to logout   
     *  Click **CONSOLE** to open the flight check console
   
-* Press **N** to show/hide **Properties**, it will shows the Designer tabs(Vehicle, Led, Fomation, Flight Check)
+* Press **N** to show/hide **Properties**, it will shows the Designer tabs(Vehicle, Led, Formation, Flight Check)
 ![Vimdrones Designer Open Blender](/static/blender_interface.jpg "Vimdrones Designer Open Blender")
 
 **Pay Attention:**  
-* Please make sure your device is connected to the network when active the licence. Some functions also need network when using Vimdrones Designer
-* It needs to click **OPEN BLENDER** Button Vimdrones Designer to open Blender  
 
-  
+* Please make sure your device is connected to the network when using Vimdrones Designer  
+* It needs to click **OPEN BLENDER** Button in Vimdrones Designer interface to open Blender  
+* If you have multiple versions of Blender, please add the its name in Blender path  
+
+![Vimdrones Designer Open Blender](/static/blender-version.jpg "Vimdrones Designer Open Blender")
+
 ## Getting started Blender
 * Open Blender, **New File** -> **General**
 * Press **A** to select all the objects in the 3D Viewport, then press **X**, **D** to delete the objects
@@ -91,21 +98,25 @@ More details about [Keymap](https://docs.blender.org/manual/en/latest/interface/
 
 **What is x qty, y qty, qty mean?** <br>
 
-qty represent the total quantity of your drone team <br>
-x qty and y qty define your a single block shape in ground, as the image shown below 
+* qty represent the total quantity of your drone team <br>
+* x qty and y qty define your a single block shape in ground, as the image shown below 
 ![Vimdrones Designer Drone Team Params](/static/drone-team-parms.png "Vimdrones Designer Drone Team Params")
 
-**what is the distance**   
+**What is the distance**   
 
 * Distance between two drones, the default value is 2m. 
 
-**What we have after create drone team?**  
+**What do we have after create drone team?**  
 
 * drones Collection ([What is Collection?](https://docs.blender.org/manual/en/latest/scene_layout/collections/collections.html))
-* distance checker Collection(quick preview for min distance between drones)
+* distance checker Collection (quick preview for min distance between drones)
 * effectors Collection
 * Begin Scene Collection
 * End Scene Collection
+
+    **Pay attention:**  
+
+* Please keep the Collection name & Object name in default 
 
 **How to set the LED glow strength?**  
 
@@ -117,9 +128,11 @@ x qty and y qty define your a single block shape in ground, as the image shown b
 * **Led** -> **Settings**, remove the "√" in from of use_nodes, then click **update**  
 ![Vimdrones Designer Create Drone Team](/static/create-drone-team-no-use-node.png "Vimdrones Designer Create Drone Team")
 
-**Pay attention(very important!)** 
+     **Pay attention(very important!)** 
 
- Once you select use_nodes to start a project, don't change it to no use_nodes. Similarly, once you select no use_nodes, don't change it to use_nodes. These two modes are not compatible in a same project.
+* Once you select **use_nodes** to start a project, don't change it to no **use_nodes**. 
+* Similarly, once you select no **use_nodes**, don't change it to **use_nodes**. 
+* These two modes are not compatible in a same project.
 
 **Operation Video** 
 
@@ -262,9 +275,13 @@ Before begin Smart Landing Formation, set the time frame to **Begin** and **Appe
 ## Add Color to Drones
 * **Led** -> **Led Magic** -> **Preview** <br>
 Select your target drones, select the color you like in color picker, click **Preview** Button, the drones color will be changed. (Select other drones, same operation as above)
-* Select all the drones in **drones** Collection, make a "√" in from of the **is linear**, click **Add KeyFrame** Button, we will the drone led color linear change<br>
-![Vimdrones Designer Drone Led Color](/static/add-color.jpg "Vimdrones Designer Drone Led Color")
-   * remove "√" in from of the **is linear**, then **Add Keyframe**. In the Timeline, we can see we have inserted two keyframes, it means that the color of drones suddenly change.
+* Make a "√" in from of the **is linear**, click **Add KeyFrame To All** Button to add keyframe to all drones.We will the drone led color linear change<br>
+
+* If we click **Add KeyFrame To Selected** Button, only the selected drones will add the keyframe</br>
+
+![Vimdrones Designer Drone Led Color](/static/add-color-v2.0.9.jpg "Vimdrones Designer Drone Led Color")
+
+* remove "√" in from of the **is linear**, then **Add Keyframe**. In the Timeline, we can see we have inserted two keyframes, it means that the color of drones suddenly change.
 
 **Operation Video** 
 
@@ -412,17 +429,14 @@ When we don't need those information, we could click the **Clear** Button
 | Ugcs      | Drone Show Software | Outdoor | <a download href="/static/third_party_path/vimdrones-third-party_-path-raw-format.zip">Download</a> |
 | High Great | Fylo    | Indoor | <a href="#">Download</a> |
 
-**Pay Attention:**  
-For Export Ugcs, please make sure that the order of drones in the last formation is like as the begin scene. 
 
+How to add your system to the list? Please [contact us](https://vimdrones.com/contact)
 
-
-What to add your system to the list? please [contact us](https://vimdrones.com/contact)
-
-Sample Path Video [Youtube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s) | [Bilibili](https://www.bilibili.com/video/av79197730)
+**Sample Path Video** [Youtube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s) | [Bilibili](https://www.bilibili.com/video/av79197730)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ax7skeVCrL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* Raw Data Format
+
+**Raw Data Format**
 
 1.txt  -> drone id 1, fps equal blender settings
 ```
@@ -431,6 +445,15 @@ Sample Path Video [Youtube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s) | 
 3 0.000 0.000 0.188 204 194 40
 ```
 | frame number | x | y | z | r | g | b |
+
+
+ 
+**Ugcs Format** <br> 
+
+   * Please make sure that the order of drones in the last formation is the same as the begin scene.  
+   * Please do not change the output frame rate in default(24 fps). Keep the **Export Settings** -> **Frame rate** to 4 or less
+
+
 
 ## How to design a Drone Light Show
 1. Draw down your minds on the picture book
@@ -448,6 +471,12 @@ Sample Path Video [Youtube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s) | 
 ![Vimdrones Designer Music Effector](/static/music-bar.gif "Vimdrones Designer Music Effector") 
 ---
 
+## Marketing
+
+**How to render a picture or video?**
+
+![Vimdrones Designer render](/static/blender-render.jpg "Vimdrones Designer render") 
+
 ## Example
 
 **Example 1: Add Line Font Text**
@@ -460,6 +489,8 @@ Sample Path Video [Youtube](https://www.youtube.com/watch?v=N5A8r9rXA68&t=9s) | 
 * Select the downloaded file  
 * Make a “√” in front of the Add-on 
 * Check the ‘Add Stroke Font Text’ option in the add-ons dialog  
+
+**Note:** Please use Blender 2.82
 
 **Add line font text**
 

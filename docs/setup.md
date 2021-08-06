@@ -234,12 +234,48 @@ When change in Z Axis Rotate in Vimdroens Designer(Real world layout)
 
 ## Remote Control
 
+Remote Control(RC) is the backup control system（another two are: 915HMz/868HMZ/2.4GHz radio & 2.4G WIFI). By default, we will not use the remote control in the drone light show.    
+In some emergency situations, we could use the remote control to control the drone to Land/RTL during the show. Please select the drone you want to manual control by RC controller in the GCS software, then click **Rescue** button.   
+Also, remote control could test the drone after the repaired.
+
+**Note**: Generally, we control one drone at a time by RC.
+
+**Rescue**: Enable drone's RC control to manual control by RC controller. During the flight, the RC control channel is closed. When we click the **Rescue** button, the channel is opened.
+
+**How to manually control a Drone**  
+Please set up the drone light show equipment at first, we could check the statues on Vimdrones GCS.
+
+**Take Off** 
+
+1. Align the heading of the drone with your heading
+2. Power the drone
+3. Power the remote control and check the switch  
+Flight Mode - **0: Stabilize** （we could check the MODE in GCS）  
+FLAP - RTL Mode - **set down** - 2  
+Disarm - **1 Keep Up**  - The throttle is locked  
+RATE - Hi - Set Up before enabling the motors     
+4. Wait for the drone to enter the positioning state - RTK Fix / Float
+5. Push the throttle stick to the low position to the right - **2 To Bottom Right**. 
+6. Arm - **3 Keep Down** 
+7. The propellers start to turn
+8. Slowly raise the throttle to make the drone take off - **4 Raise Throttle**
+9. We could change other Flight Mode for flight
+
+**Landing**
+
+* RTL Mode  
+Set up the RTL Mode stick.   
+The drone will return home automatically. (we could check the MODE in GCS)   
+Disarm - **1 Keep Up**  
+* Manually control Landing  
+Change Flight Mode - 1: Altitude hold    
+Push the throttle stick to the low position    
+Disarm - **1 Keep Up**  
+Push the throttle stick to Bottom Left  
+
+We can choose one of the ways to land, generally for RTL.
+
 ![Remote Control](/static/transmitter-controls.jpg "Remote Control") 
-
-Remote Control is the backup control system（another two are: 915/868HMZ radio & 2.4G WIFI). By default, we will not use the remote control in the drone light show.   
-In some emergency situations, we could use the remote control to control the drone to Land/RTL during the show. Please select the drone you want to manual control by RC controller in the GCS software, then click **Rescue** button. 
-
-**Rescue**：Enable drone's RC control to manual control by RC controller. During the flight, the RC control channel is closed. When we click the **Rescue** button, the channel is opened.
 
 **More details:**
 
