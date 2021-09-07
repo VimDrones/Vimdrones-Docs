@@ -137,8 +137,8 @@ When we click Drone ID on the **Drone Collection**, we could see the stats of th
 
 **GNSS(Global Navigation Satellite System)**  
 Satellite Count 
-Fix Type: Normal -> RTK Float -> RTK Fix(Ready to takeoff)  
-HODP: Horizontal dilution of precision 
+Fix Type: Normal -> DGPS -> RTK Float -> RTK Fix(Ready to takeoff)  
+HDOP: Horizontal dilution of precision 
 
 * Poor -> Good: Red -> Orange -> Green 
 
@@ -217,9 +217,9 @@ Token: The same as the Project Token
 
 ![Ground Station Interface](/static/gcs-project-data.jpg "Ground Station Interface")
 
-Current: The current project name 
-Rotation: The current project Rotation status 
-Music: The current project music name  
+Current: The current project name   
+Rotation: The current project Rotation status   
+Music: The current project music name    
 Token: The project token  
 Qty: The quantity of drones   
 Time: The drone light show duration

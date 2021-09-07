@@ -84,25 +84,19 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
 
 </br>
 
-## Pre-Flight Preparation
+## Pre-Flight Preparation   
 * Battery preparation
     * Please prepare a sufficient number of batteries（more than the number of drones）
     * Please charge the battery fully（according to the flight time, the voltage is at less 8.2V)    
 
-**Here are some tips for using batteries at low temperatures**
-1. Make sure the battery is fully charged before the flight.
-2. Fully preheat the battery to over 20 degrees.   
+**Here are some tips for using batteries at low temperatures**  
+1. Make sure the battery is fully charged before the flight.  
+2. Fully preheat the battery to over 20 degrees.        
 3. Battery preheaters are recommended.
 
 * Drone preparation
     * Please check the number the drones 
-    * Please check the airframe of the drones, especially for the propeller guard, propeller and the motor    
-
-    How to check the propeller/motor?
-    When in the guided mode or manual control by RC, please check in the GCS.  
-    GCS -> Vibration Status  
-    --Drone X/Y/Z axis Vibration value should be under 30  
-    --Clip value should be under 50 | 200 |  
+    * Please check the airframe of the drones, especially for the propeller guard, propeller and the motor      
 
 <//br>
 
@@ -343,6 +337,34 @@ We can choose one of the ways to land, generally for RTL.
 
 </br>
 
+# Fail Safe Process
+
+**Fail Safe Automatic Activation:**  
+1. If the drone battery is low, it will automatically return to home      
+2. If the drone flies out of the range(geo-fence), it will automatically return to home  
+3. If the drone loses the GPS signal, it will automatically land slowly 
+
+**Fail Safe Manual Control：**  
+1. We could click the **Land** button in the GCS software to land all the drones.  
+2. We could select one drone and click the **Land** or **RTL** button in the GCS, it will land or return to home.  
+3. We could click the **Rescue** button in the GCS software and control it manually by Remote Control.
+4. We could realtime control the drones to Pause or Continue in the GCS software.    
+Tool -> Team Control   
+
+![Ground Station Interface](/static/gcs-team-control.png "Ground Station Interface") 
+
+
+**Safety**   
+1. Preflight Check:   
+Only the drone passes the Preflight Check, it can fly. It will show the message in the LOG SYSTEM  
+2. Red Button:   
+Select one drone and click the **Stop** button to stop the motor of the drone    
+3. Safe Fence Setting:  
+We could set the Geo-Fence of the drones    
+
+![Ground Station Interface](/static/gcs-setting-fence.png "Ground Station Interface") 
+
+</br>
 
 ## Get Log 
 
