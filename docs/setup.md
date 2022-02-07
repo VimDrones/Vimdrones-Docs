@@ -60,14 +60,14 @@ table th:nth-of-type(2) {
 * Mazzy Star Drone Battery
 * Mazzy Star Drone Battery Charger
 * Vimdrones Drone Light Show System     
-    * 1 Vimdrones Smart RTK Base Station
-    * 1 Wifi Router, 220V
+    * 1 Vimdrones Smart RTK Base Station, 12V power supply
+    * 1 Wifi Router, 100-220V
     * 1 Spektrum Transmitter 
     * 1 Tripod
     * 1 915MHz/868MHz/2.4GHz Antenna
     * 1 Feeder
     * 1 PoE power supply, 220V 
-    * 3 Network Cables
+    * 3 Network Cables, 1&2&5 meters
 * Vimdrones Drone Light Show Designer Software
 * Vimdrones Ground Station Software
 
@@ -79,7 +79,7 @@ table th:nth-of-type(2) {
 * Some of the Power Strips  
 * A set of foldable desk and chair (would be very good) 
 
-Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vimdornes Drone Light Show System.pdf</a>
+Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vimdrones Drone Light Show System.pdf</a>
 
 
 </br>

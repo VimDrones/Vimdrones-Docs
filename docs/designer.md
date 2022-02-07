@@ -154,7 +154,7 @@ More details about [Keymap](https://docs.blender.org/manual/en/latest/interface/
 * Set the Current Frame -> 600 (for example; 600 means 25s, press Ctrl/Command T to change time form)<br> 
   Move the Empty Objects to Z:50m (for example), insert keyframe
 
-What is Begin and Append
+What is Begin and Append?
 
 * **Begin**: The frame that the drones begin to change the formation
 * **Append**: The frame that the drones reach the location of the new formation(Empty Objects collection)
@@ -173,17 +173,33 @@ What is Begin and Append
 
 **Create Drones Vertex Group**
 
-* Select the Mesh Object(E.g **Cube**),change **Object Mode** to **Edit Mode**
-* In the **Properties** Editor, click **Object Date** tab, click the Button "+" on the right Panel border to add a [Vertex Group](https://docs.blender.org/manual/en/latest/modeling/meshes/properties/vertex_groups/assigning_vertex_group.html), double-click the "Group" name and edit to "drones"
+* **Formation** -> **New Material Collection** -> **New**, create New Material Collection in the outline Editor. Double-click the collect to rename it(E.g **Cube Material**)
+* Add the Mesh Object/Objects(E.g **Cube**) in the Material Collection(E.g **Cube Material**)
+    * We could add more Mesh Objects into the Material Collection. So we can add animation to each object separately that make the scene more lively and interesting   
+    * **File** -> **[Append](https://docs.blender.org/manual/en/latest/files/linked_libraries/introduction.html)/[Import](https://docs.blender.org/manual/en/latest/files/import_export.html)**  
+    We can append/import the objects from other files and use them as the Material of drone scene. For example, if we import svg. files, we should convert them to Mesh(**Object** -> **Convert to** -> **Mesh from Curve/Meta/Surf/Text** in the Menu bar)
+![Vimdrones Designer Blender Import](/static/blender-import.png "Vimdrones Designer Blender Import")
+
+
+
+* Select the Mesh Object/Objects(E.g **Cube**),change **Object Mode** to **Edit Mode**
+* In the **Properties** Editor, click **Object Date** tab, click the Button "+" on the right Panel border to add a [Vertex Group](https://docs.blender.org/manual/en/latest/modeling/meshes/properties/vertex_groups/assigning_vertex_group.html).
+* Double-click the "Group" name and edit to "**drones**" (It matches the **drones** collection, do not change to other name, like Drone or Drones)
 * Select the vertices of the Mesh Object (one vertex represents one drone), click **Assign** Button below the Panel<br> 
 ![Vimdrones Designer Add Vertex Group](/static/vertex-edit.jpg "Vimdrones Designer Add Vertex Group")
+
     * We could use the tools on the left to edit the vertices. Or from the Menu Bar **[Vertex](https://docs.blender.org/manual/en/2.81/modeling/meshes/editing/vertices.html#)** to edit the vertices. <br> 
     Add the vertices:[Loop Cut](https://docs.blender.org/manual/en/2.81/modeling/meshes/editing/subdividing/loop.html#tool-mesh-loop-cut) is a very useful tool.<br> 
     Delete the vertices: Select the vertices, press **X** key to Delete or [Dissolve the vertices](https://docs.blender.org/manual/en/2.81/modeling/meshes/editing/basics/deleting.html?highlight=delete%20vertex).
 
-    * We could know how many vertices have been Assigned on the Status Bare(lower right corner)
-![Vimdrones Designer Vertex Number](/static/vertex-number.jpeg "Vimdrones Designer Vertex Number")
+    * We could know how many vertices have been Assigned on the Status Bar(lower right corner)  
+      Make a "√" in from of window -> Show Status Bar   
+![Vimdrones Designer Vertex Number](/static/vertex-number.jpeg "Vimdrones Designer Vertex Number") 
+
     * In the Vertex Group Panel, we could click the **Remove** Button to remove the vertices which have been Assigned. And we could click the **Select**/**Deselect** Button to check which vertices have been Assigned.
+
+**Pay attention!!!**   
+    Please make sure the total number of the selected Vertices (in theMaterial Collection) is the same as the number of the drones(Meshes in drones collection).    
 
 * Change **Edit Mode** to **Object Mode**
 
@@ -193,11 +209,7 @@ What is Begin and Append
 **Change the Drone Scene**
 
 * **Formation** -> **New Formation**, select the Formations Scene(E.g **Begin Scene**) which need to be changed, then click the **Copy** Button to copy a **New Formation** at in same location. Double-click the **New Formation** in the outline Editor to edit the name(E.g **Cube Formation**)
-* **Formation** -> **New Material Collection** -> **New**, create New Material Collection in the outline Editor. Double-click the collect to rename it(E.g **Cube Material**)
-* Select the Mesh Object(E.g **Cube**) which has the Drones Vertex Group, move it to the Material Collection(E.g **Cube Material**)
-    * We could add more Mesh Objects to the Material Collection. These Mesh Objects should also have **drones** Vertex Group. That's much easier for us to design the drone scene.
-    * **File** -> **[Append](https://docs.blender.org/manual/en/latest/files/linked_libraries/introduction.html)/[Import](https://docs.blender.org/manual/en/latest/files/import_export.html)**  
-    We can append/import the objects from other files and use them as the Material of drone scene. For example, if we import svg. files, we should convert them to Mesh(**Object** -> **Convert to** -> **Mesh from Curve/Meta/Surf/Text** in the Menu bar)
+
 * **Formation** -> **Vertex Formation**, select the formation(E.g **Cube Formation**) and its corresponding material_collections(E.g **Cube Material**). Click the **Append** Button. The Empty Objects in the formation will reach the location of the "drones" Vertex Group
 
 What's the **Append** mean in here?  
@@ -232,8 +244,8 @@ More details about [Animation](https://docs.blender.org/manual/en/latest/animati
 
 ---
 
-**About drone formation management**
-* We use empties(Copy New Formation)and material(New Material Collection) to manage the drone formation. 
+**About drone formation management**   
+We use empties (Copy New Formation) and material (New Material Collection) to manage the drone formation. 
 The keyframe is added on the empties when Takeoff and land, others are suggested to add on the Material objects.  
 
 * Keyframe:   
@@ -256,7 +268,7 @@ The keyframe is added on the empties when Takeoff and land, others are suggested
 * **Formation** -> **New Formation**   
 Copy the **Begin Scene** as the **End Formation**. If we don’t set the time frame, it will copy its last status. Adjust the location and Scale of the **End Formation**. It needs below the last scene in the view.  
 * **Formation** -> **Smart land**  
-Select the **begin_formations** as the last scene of the show. Select the **End_formations** as the **End Formation**. Click **Create Safe Queues** Button. When the calculation is finish, it shows the INFO: “? safe queues create(? means the Quantity)” and “Calculation processing. It will take a while”. The larger the Scale of End Formation, the smaller of the quantity of safe queues create. It also create two new Collections: **Smart Landing Path**(show the path of landing) and **Smart Landing Formation**(copy the location of last scene). Set the time frame to **Begin** and **End** the **Smart Landing Formation**. The Empties of the **Smart Landing Formation** will follow the path to the **End Formation**.  
+Select the **begin_formations** as the last scene of the show. Select the **End_formations** as the **End Formation**. Click **Create Safe Queues** Button. When the calculation is finish, it shows the INFO: “xx safe queues create(xx means the Quantity)” and “Calculation processing. It will take a while”. The larger the Scale of End Formation, the smaller of the quantity of safe queues create. It also create two new Collections: **Smart Landing Path**(show the path of landing) and **Smart Landing Formation**(copy the location of last scene). Set the time frame to **Begin** and **End** the **Smart Landing Formation**. The Empties of the **Smart Landing Formation** will follow the path to the **End Formation**.  
 * **Formation** -> **Append**   
 Before begin Smart Landing Formation, set the time frame to **Begin** and **Append** the **Smart Landing Formation**. We must remove the “√” on from of **auto resign**. So the drones will append the The Empties in order. Now the drones will follow the path to the End Formation. We could still adjust the **Smart Landing Formation** in Timeline.  
 * Finally, we copy the **Begin Scene** at frame 1 as **Land Formation**. **Formation** -> **Append**, set the time frame to **Begin** and **Append** the Land Formation.  
@@ -388,7 +400,10 @@ In the 3D Viewport, select Menu Bar **Add** -> **Object** -> **Parent** -> **Obj
 When we don't need those information, we could click the **Clear** Button
 ![Vimdrones Designer Console](/static/designer-console.png "Vimdrones Designer Console") 
 
+---
 * Open the console when you do the design and check the speed and distance real time. So you can adjust the speed and distance at any time based on the feedback from the console
+
+![Vimdrones Designer Console](/static/blender-F-curve.png "Vimdrones Designer Console") 
 
 * If the distance is larger, the formation looks more stable. If the distance is close, the airflow generated by the drone will affect each other. 
 
@@ -483,14 +498,14 @@ How to add your system to the list? Please [contact us](https://vimdrones.com/co
 
 **Installation**
 
-* Download [addstrokefont_2_8.zip](https://github.com/Shriinivas/blenderstrokefont)  
+* Download <a href="/static/blenderstrokefont.zip" target="_blank" >blenderstrokefont.zip</a>
 * Open Blender and select File->User Preferences  
 * Click install Add-ons tab and then Install Add-on from File  
 * Select the downloaded file  
 * Make a “√” in front of the Add-on 
 * Check the ‘Add Stroke Font Text’ option in the add-ons dialog  
 
-**Note:** Please use Blender 2.82
+**Note:** Please use Blender2.80 or 2.81
 
 **Add line font text**
 

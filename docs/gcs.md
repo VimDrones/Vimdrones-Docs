@@ -12,7 +12,7 @@ Vimdrones Ground Control Station(GCS) Software could control thousands of drones
 * Takeoff Countdown
 
 **Version**
-Vimdrones GCS (Version: V3.1.0)
+Vimdrones GCS (Version: V3.1.2)
 
 ## System requirements
 
@@ -66,16 +66,17 @@ By default the system shipped with pre config Mazzy Star Drone™, when you boug
 * Set Wifi Password (come with system document)
 * Click **Make** button and pop up SD card
 
-**Pair 915/868 Mhz Radio Channel**
+**Pair RC Transmitter**
+
+* Click **RC Bind** button in Drone panel and see orange light flash inside the drone, press RC Transmitter bind button and power on the Transmitter, when heard a happy voice means it success 
+
+
+**Pair 915/868 MHz or 2.4GHz Radio Channel**
 
 ![New Drone Setup](/static/new-drone-radio-bind.png "New Drone Setup")
 
 * Insert SD card back to the drone
 * Power up the drone, click **Radio Pair** button in Base panel and get "Drone X radio Pair Success" Notification
-
-**Pair RC Transmitter**
-
-* Click **RC Bind** button in Drone panel and see orange light flash in drone, press RC Transmitter bind button and power on the Transmitter, when heard a happy voice means it success
 
 ## Interface 
 
