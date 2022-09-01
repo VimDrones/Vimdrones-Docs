@@ -6,6 +6,7 @@ The Vimdrones Designer is an Add-on of Blender that uses for Drone Light Show Fl
 
 * One-click Formation
 * Smart Formation Transform
+* Auto Resign Lock Selected
 * Flight Check to Avoid Collision
 * 3D Animation
 * Rich Color Design
@@ -14,9 +15,6 @@ The Vimdrones Designer is an Add-on of Blender that uses for Drone Light Show Fl
 * Music and Light
 * Easy Marketing Design
 
-**Version**  
-Vimdrones Designer (Version: V2.0.9)    
-Vimdrones Designer (Version: V2.0.8)  
 
 ## System requirements
 
@@ -260,6 +258,45 @@ The keyframe is added on the empties when Takeoff and land, others are suggested
       So each formation is individually added with keyframe. When you want to adjust the formation, you can reuse the material(file -> Append). It is quickly to redo the project. Otherwise, if all keyframes are added on the drones, it is hard to when you want to re-edit. Maybe it needs to restart the project. 
 
 
+## Auto Resign Lock Selected
+
+**Auto Resign Lock Selected**: enables partial object locking when paths are Auto assigned
+
+**Lock Selected**: Lock items and it will not resign in auto resign process  
+**Clear Lock**: claer all auto resign locked items  
+**Show Locked Items**: show auto resign locked items  
+
+
+**How to use Auto Resign Lock Selected function?**
+
+* Copy from the current formation  
+
+![Vimdrones Designer Auto Resign Lock Selected](/static/designer-lock-1.jpeg "Vimdrones Designer Drone Auto Resign Lock Selected")
+
+* Please select the empties of New Formation that you don't want to move. Click the Lock Selected button. 
+
+![Vimdrones Designer Auto Resign Lock Selected](/static/designer-lock-2.jpeg "Vimdrones Designer Drone Auto Resign Lock Selected")
+
+* Then in the Vertex Formation, click Append button. Only the vertex without lock will make the transfer.  
+
+![Vimdrones Designer Auto Resign Lock Selected](/static/designer-lock-3.jpeg "Vimdrones Designer Drone Auto Resign Lock Selected")
+
+* Finish the transfer of the Begin and Append the drones in the New Formation  
+
+![Vimdrones Designer Auto Resign Lock Selected](/static/designer-lock-3.jpeg "Vimdrones Designer Drone Auto Resign Lock Selected")
+
+Pay attention:
+* Click the window and cancel the selected. Click the **Show selected Items** for check.
+  Select the empties that you don't want to Lock, please click the **Clear Lock** button.
+* The empties number without lock should be the same as the assign vertex number of the new material object(s). 
+
+**Operation Video** 
+
+* [YouTube](https://youtu.be/qo8PaoLAGpw)  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qo8PaoLAGpw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+----
 
 
 ## Smart Land
@@ -488,9 +525,17 @@ How to add your system to the list? Please [contact us](https://vimdrones.com/co
 
 ## Marketing
 
-**How to render a picture or video?**
+**How to render a picture or video?**  
+1. Add the Camera  
+2. Set Restriction Toggles: **Holdout** and **Indirect only** on  
+3. Click **Output Properties**, set the **Frame Range**, choose the Output file location and the **File Format**  
+4. Click **Render** -> **Lock Interface** with a "✓". choose **Render Image** or **Render Animation**  
 
 ![Vimdrones Designer render](/static/blender-render.jpg "Vimdrones Designer render") 
+
+* Pay attention:   
+Render must uncheck **Lock Interface**.
+![Vimdrones Designer render](/static/blender-render.png "Vimdrones Designer render") 
 
 ## Example
 

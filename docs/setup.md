@@ -1,7 +1,7 @@
 
 ## Mazzy Star Drone Introduction
 Mazzy Star Drone is designed for drone light show, featuring a full-colour RGB LED, intelligent flight mode and high precision positioning system. It equips with RTK GPS positioning system and multiple control channels communication system to ensure a stable and safe formation flight.
-Mazzy Star Drone has full size propeller guard and only 0.46kg armed weight. The maximum time hover time is up to 18 minutes. For the revolutionary design, Mazzy Star Drone significantly reduce safety risks compared to other drones on the market.
+Mazzy Star Drone has full size propeller guard and only 0.48kg armed weight. The maximum time hover time is up to 18 minutes. For the revolutionary design, Mazzy Star Drone significantly reduce safety risks compared to other drones on the market.
 
 [Drone Light Show Play list](https://youtube.com/playlist?list=PL0yTwW_bnpPIzh5wLbhtXvQPJ0GY6Isgl)
 
@@ -12,11 +12,11 @@ Mazzy Star Drone has full size propeller guard and only 0.46kg armed weight. The
 **Feature Highlights**
 
 * Compact, durable and light airframe, full-size propeller guard
-* Only 0.46kg armed weight, up to 18-min flight time
+* Only 0.48kg armed weight, up to 18-min flight time
 * Full-colour RGB LED in high brightness, up to 640LM
 * Ground control software with Realtime 3D video preview
-* High precision RTK GPS, 2 cm precision with RTK fixed
-* Radio transmit, 915MHz/868MHz/2.4GHz, 3km Long Range Control
+* High precision RTK GPS, centimeter-level accuracy with RTK fixed
+* Radio transmit, 915MHz/2.4GHz, 3km Long Range Control
 * WIFI transmit, 2.4G, 120m Long Range Control
 * Remote Control, 2.4G, 1km distance
 * Drone light show Ground Control Station Software “Vimdrones GCS” --with efficient drone dashboard, Realtime 2D&3D video preview, enables flexible configuration and development
@@ -40,18 +40,18 @@ table th:nth-of-type(2) {
 | Drone Specs        |Details           |
 | : --------------------- |:-------------|
 | Airframe      | Compact, durable and light airframe, full size propeller guard | 
-| Weight      | 460± g with 2S 3000mAh battery |
+| Weight      | 480± g with 2S 3000mAh battery |
 | Body Dimension | 340x340x80 mm | 
-| Motor and Prop | 2300 kV brushless motors; 6 inch carbon fiber propeller |   
+| Motor and Prop | 2300 kV brushless motors; 6 inch propeller |   
 | Max Hover Time | 18mins |
 | Wind Resistibility | < 7 m/s |   
-| Positioning System | RTK GPS (GPS+GLONASS+Beidou), 2 cm precision with RTK fixed |  
+| Positioning System | RTK GPS (GPS+GLONASS+Galileo+BeiDou), Centimeter-level accuracy with RTK fixed |  
 | Battery | LiPo2S, 7.6V, 3000-mAh |  
-| Remote Control | 6-channel 2.4G radio remote controller (1km distance, optional) |  
-| Ground Antenna | 915MHz/868MHz/2.4GHz 1000 mW, communication range 3km |
-| Drone Antenna | 915MHz/868MHz/2.4GHz 20 mW, communication range, 2km <br>2.4G, communication range, 120m |
+| Remote Control | 7-channel 2.4G radio remote controller (1km distance, optional) |  
+| Ground Antenna | 915MHz/2.4GHz 1000 mW, communication range 3km |
+| Drone Antenna | 915MHz/2.4GHz 20 mW, communication range, 2km <br>2.4G WiFi, communication range, 120m |
 | LED | Integrated full-color RGB LED, 4W |
-| Charger | high-power 2S LiPo battery balance charger <br>10 charging holes <br>Input: AC100~240V 50/60Hz,3A(Max) <br> Output: DC8.7 V 1.5A 10 groups | 
+| Charger | high-power 2S LiPo battery balance charger <br>10 charging holes <br>Input: AC100~240V 50/60Hz, 3A(Max) <br> Output: DC8.7 V 1.5A 10 groups | 
 | Accessory | Foam box 1 (420x420x148mm) |  
 
 
@@ -60,15 +60,16 @@ table th:nth-of-type(2) {
 * Mazzy Star Drone Battery
 * Mazzy Star Drone Battery Charger
 * Vimdrones Drone Light Show System     
-    * 1 Vimdrones Smart RTK Base Station, 12V power supply
+    * 1 Vimdrones Smart RTK Base Station, 5V/3A
     * 1 Wifi Router, 100-220V
-    * 1 Spektrum Transmitter 
-    * 1 Tripod
-    * 1 915MHz/868MHz/2.4GHz Antenna
-    * 1 Feeder
+    * 1 Spektrum Transmitter, 4*1.5V AA 300mA  
+    * 1 915MHz/2.4GHz Antenna & 2 Feeders
+    * 1 GNSS Antenna & 1 Feeder
+    * 1 PoE Splitter
     * 1 PoE power supply, 220V 
-    * 3 Network Cables, 1&2&5 meters
-* Vimdrones Drone Light Show Designer Software
+    * 1 Tripod
+    * 3 Network Cables, 1&2&5 meters   
+* Vimdrones Designer Software
 * Vimdrones Ground Station Software
 
 ![Ready To Fly List](/static/drone-light-show-equitment.jpg "Ready To Fly List")
@@ -90,9 +91,11 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
     * Please charge the battery fully（according to the flight time, the voltage is at less 8.2V)    
 
 **Here are some tips for using batteries at low temperatures**  
-1. Make sure the battery is fully charged before the flight.  
-2. Fully preheat the battery to over 20 degrees.        
-3. Battery preheaters are recommended.
+    1. Make sure the battery is fully charged before the flight.  
+    2. Fully preheat the battery to over 20 degrees.        
+    3. Battery preheaters are recommended.
+
+<//br>
 
 * Drone preparation
     * Please check the number the drones 
@@ -101,13 +104,13 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
 <//br>
 
 * Flight Path preparation
-    * Export *Vimdrones GCS*  flight **project**   
-    Use Vimdrones Designer to design the Flight path, save the .blend file and export the *Vimdrones GCS* flight data
+    * Export [Vimdrones GCS] flight **project**   
+    Use Vimdrones Designer to design the Flight path, save the .blend file and export the  [Vimdrones GCS] flight data
 
 
     * **Usage Warming:**   
 
-    Do not let the drone collide when design the Flight path. It is recommended that the distance between drones is above 2m. If the distance is larger, the formation looks more stable. If the distance is close, the airflow generated by the drone will affect each other.      
+     Do not let the drone collide when design the Flight path. It is recommended that the distance between drones is above 2m. If the distance is larger, the formation looks more stable. If the distance is close, the airflow generated by the drone will affect each other.      
 
     Do not let the drone exceed the speed limit when design the Flight path   
     1. Max Horizontal Velocity (Up To) is 4m/s  
@@ -116,11 +119,14 @@ Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vim
     4. It is recommended that the flying speed of the drone is below 5m/s  
     5. It is recommended that the takeoff/landing speed of the drone is below 2m/s   
 
+    Do not fly obliquely to land when the drones landing to the ground. Please keep descending vertically.
+
     Do not let the drone beyond the fence when design the Flight path   
     1. Height: 120m  
     2. Radius: 500m  
 
-    When the drone takes off at an altitude of about 5 meters, it will start to execute the flight path and quickly fill in the altitude. It is recommended to take off as a whole, or take off in a row. Of course, it’s not a problem to turn into graphics after takeoff, as long as it doesn’t reach the restricted speed and distance
+    **Pay attention:**  
+    When the drone takes off at an altitude of about 10 meters, it will start to execute the flight path and quickly fill in the altitude. It is recommended to take off as a whole, or take off in a row. Of course, it’s not a problem to turn into graphics after takeoff, as long as it doesn’t reach the restricted speed and distance after 10 meters high.
 
 
 
@@ -143,7 +149,7 @@ If it is raining, snowing or the wind speed is above 7m/s（bad weather）, plea
 **Pay attention!!!**   
 Please first power the wifi router, then long press the button to turn on the RTK Base. It will make sure the GCS works properly on the computer.
 
-![Drone Light Show System](/static/drone-light-show-system-communication-diagram.jpg "Drone Light Show System") 
+![Drone Light Show System](/static/drone-light-show-system-communication-diagram-2.jpg "Drone Light Show System") 
 
 **Operation Video**
 
@@ -206,7 +212,29 @@ When change in Z Axis Rotate in Vimdroens Designer(Real world layout)
 10. Click **Takeoff** button, start your Drone Light Show 
 
 
+**Mazzy Star Drone Led Indicate**
+<style>
+table th:first-of-type {
+    width: 50%;
+}
+table th:nth-of-type(2) {
+    width: 30%;
+}
+table th:nth-of-type(3) {
+    width: 20%;
+}
+</style>
 
+| Name	| LED	|    Tags | 
+| : -------- |:---------|:----------|
+|Power on the drone|   White flashing for a while | |
+| The drone is waiting for RTK fix	| Red pulsing	| before take off|
+| The flight controller is checking	| Blue pulsing	| before take off|
+| The drone has been RTK fix	| Yellow pulsing	| before take off|
+| Uploading the Design Project to the drone	| 	White flashing| before take off|
+| Set home success, ready to take off	| Green	| before take off|
+| The Design Project is end the drone is landing	| Purple pulsing	| Landing|
+| Uploading the firmware file	| White flashing	| |
 
 **Operation Video**
 
@@ -219,7 +247,7 @@ When change in Z Axis Rotate in Vimdroens Designer(Real world layout)
 
 
 ## Post-Flight Setup Procedure
-* Unplug the batteries of the drones to the package
+* Unplug the batteries of the drones to the package. **No need to fully charge the battery until the next flight**
 * Put the drones into the packages, then stack up the packages and tie them up with a buckle
 * Pack up the Drone Light Show System into the package
 * Pack up the remaining equipment
@@ -228,13 +256,15 @@ When change in Z Axis Rotate in Vimdroens Designer(Real world layout)
 
 ## Remote Control
 
-Remote Control(RC) is the backup control system（another two are: 915HMz/868HMZ/2.4GHz radio & 2.4G WIFI). By default, we will not use the remote control in the drone light show.    
-In some emergency situations, we could use the remote control to control the drone to Land/RTL during the show. Please select the drone you want to manual control by RC controller in the GCS software, then click **Rescue** button.   
-Also, remote control could test the drone after the repaired.
+Remote Control(RC) is the backup control system（another two are: 915HMz/2.4GHz radio & 2.4G WIFI). By default, we will not use the remote control in the drone light show.    
+
+* In some emergency situations, we could use the remote control to control the drone to Land/RTL during the show. Please select the    drone you want to manual control by RC controller in the GCS software, then click **Rescue** button.  
+  **Rescue**: Enable drone's RC control to manual control by RC controller. During the flight, the RC control channel is closed. When we click the **Rescue** button, the channel is opened.  
+  ![Remote Control](/static/rc-rescue.jpeg "Remote Control") 
+
+* Also, remote control could test the drone after the repaired.
 
 **Note**: Generally, we control one drone at a time by RC.
-
-**Rescue**: Enable drone's RC control to manual control by RC controller. During the flight, the RC control channel is closed. When we click the **Rescue** button, the channel is opened.
 
 **How to manually control a Drone**  
 Please set up the drone light show equipment at first, we could check the statues on Vimdrones GCS.

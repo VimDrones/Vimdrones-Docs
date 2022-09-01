@@ -7,12 +7,10 @@ Vimdrones Ground Control Station(GCS) Software could control thousands of drones
 * Easy Usage - Control thousands of drones just need one person
 * Efficient Drone Dashboard
 * Can run on multi PC for teamwork
+* One click to take off and land
 * RealTime 2D position view
 * RealTime 3D position view
 * Takeoff Countdown
-
-**Version**
-Vimdrones GCS (Version: V3.1.2)
 
 ## System requirements
 
@@ -134,7 +132,7 @@ Acc: Accuracy<2m -> Survey In(Success)
 
 ![Ground Station Interface](/static/gcs-drone-status.png "Ground Station Interface")
 
-When we click Drone ID on the **Drone Collection**, we could see the stats of this drone. By default, it shows Drone **ID: 8** Status. We could see the ID No. and Online/Outline on the Drone Icon
+When we click Drone ID on the **Drone Collection**, we could see the stats of this drone. We could see the ID No. and Online/Outline on the Drone Icon
 
 **GNSS(Global Navigation Satellite System)**  
 Satellite Count 
@@ -253,10 +251,10 @@ It shows the select drone's log system
 Select the color, set the diffuse color(LED brightness), click **Update** icon. We could control the LED Control Realtime when having the drone light show.
 
 Light Mode：  
-* Long  
-* Breath
-* Flash
-* Quick
+* Long     
+* Breath  
+* Flash  
+* Quick  
 
 **Takeoff**  
 
@@ -269,8 +267,13 @@ Light Mode：
 * Takeoff: When everything id Ok, Click the **Takeoff** button to begin your drone light show
 
 
-**Overview**
+**Overview**  
 ![Ground Station Interface](/static/gcs-overview.jpg "Ground Station Interface")
+
+**PreArm Fail:** The drone Fail to PreArm(takeoff). Please check LOG system of fail drones. The refresh rate of PreArm fail is 1 minute. 
+**Token Fail:** The drone'project upload fail or Empty. Please try to upload(skip success) again. 
+**RTK Fail:** The drone is not RTK fixed yet. Please wait for RTK fixed.  
+**Set Home Fail:** Please set home again.  
 
 
 ## Settings
