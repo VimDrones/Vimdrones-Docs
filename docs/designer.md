@@ -20,7 +20,7 @@ The Vimdrones Designer is an Add-on of Blender that uses for Drone Light Show Fl
 
 System requirements for Vimdrones Designer Software:
 
-* Operating system: Windows 8; Windows 10; Mac OS
+* Operating system: Windows 10; Mac OS
 * CPU: Intel Core i5 or better
 * Memory: Minimum 8 GB of RAM or more
 * Hard drive: SSD 120 GB. Recommended 256GB or more
@@ -285,14 +285,16 @@ The keyframe is added on the empties when Takeoff and land, others are suggested
 
 ![Vimdrones Designer Auto Resign Lock Selected](/static/designer-lock-3.jpeg "Vimdrones Designer Drone Auto Resign Lock Selected")
 
-Pay attention:
-* Click the window and cancel the selected. Click the **Show selected Items** for check.
-  Select the empties that you don't want to Lock, please click the **Clear Lock** button.
-* The empties number without lock should be the same as the assign vertex number of the new material object(s). 
+Pay attention: 
+
+* Click the window and cancel the selected. Click the **Show selected Items** for check.  
+  Select the empties that you don't want to Lock, please click the **Clear Lock** button.  
+* The empties number without lock should be the same as the assign vertex number of the new material object(s).   
 
 **Operation Video** 
 
 * [YouTube](https://youtu.be/qo8PaoLAGpw)  
+* [bilibili]( https://www.bilibili.com/video/BV1bV4y1u7Dv?share_source=copy_web&vd_source=943fe440f06e9a2914e98a6a98356954)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qo8PaoLAGpw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 

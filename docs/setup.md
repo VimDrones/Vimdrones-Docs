@@ -13,7 +13,7 @@ Mazzy Star Drone has full size propeller guard and only 0.48kg armed weight. The
 
 * Compact, durable and light airframe, full-size propeller guard
 * Only 0.48kg armed weight, up to 18-min flight time
-* Full-colour RGB LED in high brightness, up to 640LM
+* Full-color RGB LED in high brightness, up to 640LM
 * Ground control software with Realtime 3D video preview
 * High precision RTK GPS, centimeter-level accuracy with RTK fixed
 * Radio transmit, 915MHz/2.4GHz, 3km Long Range Control
@@ -28,24 +28,15 @@ Mazzy Star Drone has full size propeller guard and only 0.48kg armed weight. The
 
 **Technical Specifications**
 
-<style>
-table th:first-of-type {
-    width: 22%;
-}
-table th:nth-of-type(2) {
-    width: 78%;
-}
-</style>
-
-| Drone Specs        |Details           |
-| : --------------------- |:-------------|
+| Drone Specs |Details     |
+| : -- | : --------|
 | Airframe      | Compact, durable and light airframe, full size propeller guard | 
 | Weight      | 480± g with 2S 3000mAh battery |
 | Body Dimension | 340x340x80 mm | 
 | Motor and Prop | 2300 kV brushless motors; 6 inch propeller |   
 | Max Hover Time | 18mins |
 | Wind Resistibility | < 7 m/s |   
-| Positioning System | RTK GPS (GPS+GLONASS+Galileo+BeiDou), Centimeter-level accuracy with RTK fixed |  
+| Positioning System | RTK GPS (GPS+GLONASS+Galileo+BeiDou)<br>Centimeter-level accuracy with RTK fixed |  
 | Battery | LiPo2S, 7.6V, 3000-mAh |  
 | Remote Control | 7-channel 2.4G radio remote controller (1km distance, optional) |  
 | Ground Antenna | 915MHz/2.4GHz 1000 mW, communication range 3km |
@@ -79,9 +70,6 @@ table th:nth-of-type(2) {
 * May need 220V power supply from mobile power bank  
 * Some of the Power Strips  
 * A set of foldable desk and chair (would be very good) 
-
-Download <a href="/static/vimdrones-drone-light-system.pdf" target="_blank" >Vimdrones Drone Light Show System.pdf</a>
-
 
 </br>
 
@@ -213,17 +201,6 @@ When change in Z Axis Rotate in Vimdroens Designer(Real world layout)
 
 
 **Mazzy Star Drone Led Indicate**
-<style>
-table th:first-of-type {
-    width: 50%;
-}
-table th:nth-of-type(2) {
-    width: 30%;
-}
-table th:nth-of-type(3) {
-    width: 20%;
-}
-</style>
 
 | Name	| LED	|    Tags | 
 | : -------- |:---------|:----------|
@@ -235,6 +212,8 @@ table th:nth-of-type(3) {
 | Set home success, ready to take off	| Green	| before take off|
 | The Design Project is end the drone is landing	| Purple pulsing	| Landing|
 | Uploading the firmware file	| White flashing	| |
+
+
 
 **Operation Video**
 
