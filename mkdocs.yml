@@ -12,8 +12,8 @@ site_favicon: /static/favicon.ico
 google_analytics: ['UA-120607162-1', 'docs.vimdrones.com']
 copyright: ©Vimdrones. All rights reserved.
 nav:
-- Home: index.md
-- Drone Light Show Designer: designer.md
-- Ground Station Software: gcs.md
-- Drone Show Setup: setup.md
-- Trouble Shooting: troubleshooting.md
+  - Home: index.md
+  - Drone Light Show Designer: designer.md
+  - Ground Station Software: gcs.md
+  - Drone Show Setup: setup.md
+  - Trouble Shooting: troubleshooting.md
