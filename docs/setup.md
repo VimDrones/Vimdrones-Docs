@@ -1,9 +1,9 @@
 
 ## Mazzy Star Drone Introduction
-Mazzy Star Drone is designed for drone light show, featuring a full-colour RGB LED, intelligent flight mode and high precision positioning system. It equips with RTK GPS positioning system and multiple control channels communication system to ensure a stable and safe formation flight.
+Mazzy Star Drone is designed for drone light show, featuring a full-color RGB LED, intelligent flight mode and high precision positioning system. It equips with RTK GPS positioning system and multiple control channels communication system to ensure a stable and safe formation flight.
 Mazzy Star Drone has full size propeller guard and only 0.48kg armed weight. The maximum time hover time is up to 18 minutes. For the revolutionary design, Mazzy Star Drone significantly reduce safety risks compared to other drones on the market.
 
-[Drone Light Show Play list](https://youtube.com/playlist?list=PL0yTwW_bnpPIzh5wLbhtXvQPJ0GY6Isgl)
+[Drone Light Show Playlist](https://youtube.com/playlist?list=PL0yTwW_bnpPIzh5wLbhtXvQPJ0GY6Isgl)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Lm-ZsTvbPis" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -43,14 +43,14 @@ Mazzy Star Drone has full size propeller guard and only 0.48kg armed weight. The
 | Drone Antenna | 915MHz/2.4GHz 20 mW, communication range, 2km <br>2.4G WiFi, communication range, 120m |
 | LED | Integrated full-color RGB LED, 4W |
 | Charger | high-power 2S LiPo battery balance charger <br>10 charging holes <br>Input: AC100~240V 50/60Hz, 3A(Max) <br> Output: DC8.7 V 1.5A 10 groups | 
-| Accessory | Foam box 1 (420x420x148mm) |  
+| Accessory | Foam box (420x420x148mm) |  
 
 
 ## Ready To Fly List
 * Mazzy Star Drone
 * Mazzy Star Drone Battery
 * Mazzy Star Drone Battery Charger
-* Vimdrones Drone Light Show System     
+* Vimdrones Drone Light Show Device    
     * 1 Vimdrones Smart RTK Base Station, 5V/3A
     * 1 Wifi Router, 100-220V
     * 1 Spektrum Transmitter, 4*1.5V AA 300mA  
@@ -163,7 +163,7 @@ Drone layout:
 
 -----
 
-When change in Z Axis Rotate in Vimdroens Designer(Real world layout)
+When change in Z Axis Rotate in Vimdrones Designer(Real world layout)
 ![Drone Light Show System](/static/drone-layout-angle.jpg "Drone Light Show System")
 
 ![Drone Light Show System](/static/Z-Axis-Rotate_-40.jpg "Drone Light Show System")
