@@ -2,6 +2,8 @@
 
 The Vimdrones Designer is an Add-on of Blender that uses for Drone Light Show Flight Path Design. It could create any figures, like 2D or 3D animation, even with music beats. For its efficiently handling the transformation between drone formations and lighting effects, we could focus more on the drone light show design itself. 
 
+![Vimdrones Designer Installation](/static/designer-vimdrones-logo.jpeg "Vimdrones Designer Installation") 
+
 **Feature Highlights**
 
 * One-click Formation
@@ -516,10 +518,11 @@ How to add your system to the list? Please [contact us](https://vimdrones.com/co
 4. Add animation to the Material Objects
 5. Have a Flight check to the animation
 6. Add color & effector to the drones
-7. Export the Drone Light Show data
+7. Adjust the End frame to the frame when drones land 
+8. Export the Drone Light Show data
 
 
-**Tips:**
+**Tips:**  
 1. Remember to save a few more backups when designing  
 2. If we select a music for the drone light show background music at first, we can create drone light effects based on the beat of the music. The music data could influences the size or color of the Effector Object. So, it is very easy to grab every beat of music and let sound, light and electricity blend together perfectly.
 ![Vimdrones Designer Music Effector](/static/music-bar.gif "Vimdrones Designer Music Effector") 
@@ -531,12 +534,12 @@ How to add your system to the list? Please [contact us](https://vimdrones.com/co
 1. Add the Camera  
 2. Set Restriction Toggles: **Holdout** and **Indirect only** on  
 3. Click **Output Properties**, set the **Frame Range**, choose the Output file location and the **File Format**  
-4. Click **Render** -> **Lock Interface** with a "✓". choose **Render Image** or **Render Animation**  
+4. Click **Render**, choose **Render Image** or **Render Animation**  
 
 ![Vimdrones Designer render](/static/blender-render.jpg "Vimdrones Designer render") 
 
 * Pay attention:   
-Render must uncheck **Lock Interface**.
+Render must uncheck **Lock Interface**. Do not export the files when rendering.
 ![Vimdrones Designer render](/static/blender-render.png "Vimdrones Designer render") 
 
 ## Example

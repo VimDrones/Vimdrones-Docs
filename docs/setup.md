@@ -114,12 +114,12 @@ Mazzy Star Drone has full size propeller guard and only 0.48kg armed weight. The
     2. Radius: 500m  
 
     **Pay attention:**  
-    When the drone takes off at an altitude of about 10 meters, it will start to execute the flight path and quickly fill in the altitude. It is recommended to take off as a whole, or take off in a row. Of course, it’s not a problem to turn into graphics after takeoff, as long as it doesn’t reach the restricted speed and distance after 10 meters high.
+    When the drone takes off at an altitude of about 10 meters, it will start to execute the flight path and quickly fill in the altitude. It is recommended to vertical take off as a whole, or vertical take off in a row. Of course, it’s not a problem to turn into graphics after takeoff, as long as it doesn’t reach the restricted speed and distance after 10 meters high.
 
 
 
 **Warming:**    
-If it is raining, snowing or the wind speed is above 7m/s（bad weather）, please stop the drone light show.
+It's not recommended to fly drones in rain, mist, high humidity, or over water bodies with strong winds. Mazzy Star Drone has venting holes that can expose the electronics inside to moisture. Once water gets inside, short circuits can occur and possibly damage the drone.
 
 </br>
 
@@ -128,14 +128,15 @@ If it is raining, snowing or the wind speed is above 7m/s（bad weather）, plea
 
 **Drone Light Show System Communication:**  
 
-* Power the wifi router, connect the wifi router and PoE power supply with a network cable 
-* Place the tripod，setup the RTK Base and the antenna, use the Feeder to connect the RTK Base and the antenna
-* Connect the RTK Base to PoE power supply with a network cable  (so the wifi router can communicate with the RTK base)
-* Power the RTK Base through the PoE power supply
-* Place the Remote Controller(Backup)
+* Place the tripod，setup the RTK Base and the antennas, use the feeders to connect the RTK Base from the radio antenna and GNSS antenna  
+* Use a network cable to connect the yellow area of the router to the LAN port of the PoE power supply
+* Use another network cable to connect the PoE splitter to the PoE port of the PoE power supply
+* Power on the router
+* Power the RTK Base through the PoE splitter connection 
+* Place the Remote Controller (as the Backup System)
 
-**Pay attention!!!**   
-Please first power the wifi router, then long press the button to turn on the RTK Base. It will make sure the GCS works properly on the computer.
+**Pay attention**   
+Please first power the wifi router, then turn on the RTK Base. It will make sure the GCS works properly on the computer.
 
 ![Drone Light Show System](/static/drone-light-show-system-communication-diagram-2.jpg "Drone Light Show System") 
 
@@ -152,13 +153,13 @@ Please first power the wifi router, then long press the button to turn on the RT
 * According the design to place and locate drones
 * Insert the batteries to the drones, but not power the drones   
 
-**Usage Warning:**  
+**Usage Warning**  
 
-* Do not have the show near people too close or over people’ head   
+* Do not have the show near people too close or hovering above the heads of persons  
 * Should have the show in an open space without high obstacles   
 * Should make sure of good order inside the venue without any interference or disruption when having the show  
 
-Drone layout: 
+**Drone layout**
 ![Drone Light Show System](/static/drone-layout.jpg "Drone Light Show System") 
 
 -----
@@ -171,7 +172,7 @@ When change in Z Axis Rotate in Vimdrones Designer(Real world layout)
 *  In default, the orientation of the formation is North. The GCS couldn't change the orientation of the drone formation. The drone will totally fly according to the designed path. If you want to change the orientation. It needs to be set in the designer software before you export the data.   
 *  Vehicle -> Export Setting -> Z Axis Rotate(degree in clockwise).    
 *  Z Axis Rotate: rotate degree in clockwise to coordinate, default is 0, if your flight field direction is different from your design, this would help.    
-*  Pay attention: if you change the Z Axis Rotate, the drone' head need to change the same degree.  
+*  **Pay attention**: if you change the Z Axis Rotate, the drone' head need to change the same degree.  
 
 
 
@@ -187,33 +188,41 @@ When change in Z Axis Rotate in Vimdrones Designer(Real world layout)
 ----
 
 ## Flight Procedure
-0. Connect the wifi on computer, run Vimdrones GCS  
+0. Connect the wifi on computer, run Vimdrones GCS   
+1. Click **Settings** icon, set the Grid X, Y, and Drone Qty to match the drone display
 1. When the RTK Base is enter, click **Survey In** button   
 2. Waiting for Survey In ready, **Survey in(Success)**  
-3. Click **Open** button, Select Design Project   
-4. Power on Mazzy Star Drones, white light fast flashing -> red light flashing    
-5. Mazzy Star Drone online, we can see the Drone Status on GCS  
-6. Drone Status Check Pass(RTK Fix), yellow light flashing  
-7. Click **Upload** button, upload trajectory Design to the drones, white light fast flashing  
-8. Select Drone 1, click **Copy From Drone** button, copy drone 1 location  
+3. Power on Mazzy Star Drones, white light fast flashing -> red light flashing   
+4. Mazzy Star Drone online, we can see the Drone Status on GCS     
+5. Click **Open** button, Select Design Project  
+6. Click **Upload** button, upload trajectory Design to the drones, white light fast flashing 
+7. Drone Status Check Pass (check **overview** and **log system**), yellow light flashing (have been RTK fixed)  
+8. Select Drone 1, click **Copy From Drone** button, copy drone 1 position  
 9. Click **Set Home** button, set home location to all drones, green light  
 10. Click **Takeoff** button, start your Drone Light Show 
+
+**Note**   
+1. If the design project is the same for the drone light show from last flight, it doesn't need to upload the project again to the drones.  
+2. You could click the **Map** icon to check the order and position of the drones.  
+3. Please check the **overview** and **log system** carefully before takeoff the drones.   
 
 
 **Mazzy Star Drone Led Indicate**
 
-| Name	| LED	|    Tags | 
-| : -------- |:---------|:----------|
-|Power on the drone|   White flashing for a while | |
-| The drone is waiting for RTK fix	| Red pulsing	| before take off|
-| The flight controller is checking	| Blue pulsing	| before take off|
-| The drone has been RTK fix	| Yellow pulsing	| before take off|
-| Uploading the Design Project to the drone	| 	White flashing| before take off|
-| Set home success, ready to take off	| Green	| before take off|
-| The Design Project is end the drone is landing	| Purple pulsing	| Landing|
-| Uploading the firmware file	| White flashing	| |
+| Name	| LED	| 
+| : -------- |:---------|
+|Power on the drone|   White Quick Flash for a while | 
+| Uploading the Design Project to the drone	| 	White Quick Flash|
+| The flight controller is checking	| Blue Flash| 
+| The drone is waiting for RTK fix	| Red Flash	| 
+| The drone has been RTK fix	| Yellow Breath	| 
+| Set home success, ready to take off	| Green | 
+| The Design Project is end the drone is landing	| Purple Flash	|
 
-
+**LED Mode**     
+1. **Breath**: The LED's brightness smoothly changes from dark to bright and back to dark   
+2. **Flash**: The LED regularly on and off  
+3. **Quick**: The LED flash fast 
 
 **Operation Video**
 
@@ -245,7 +254,8 @@ Remote Control(RC) is the backup control system（another two are: 915HMz/2.4GHz
 
 **Note**: Generally, we control one drone at a time by RC.
 
-**How to manually control a Drone**  
+**How to manually control a Drone?**   
+
 Please set up the drone light show equipment at first, we could check the statues on Vimdrones GCS.
 
 **Take Off** 
@@ -280,14 +290,10 @@ We can choose one of the ways to land, generally for RTL.
 
 ![Remote Control](/static/transmitter-controls.jpg "Remote Control") 
 
-**More details:**
-
-* [DXe Transmitter Manual – Multilingual](https://www.spektrumrc.com/ProdInfo/Files/SPM1000-manual-MULTI.pdf)  
-
-**Usage Warning:**  
+**Usage Warning**  
 
 * Do not arm the drone near people too close   
-* Do not arm the drone over people’ head  
+* Do not arm the drone hovering above the heads of persons 
 
 **Operation Video**
 

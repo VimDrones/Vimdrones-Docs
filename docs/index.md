@@ -1,7 +1,7 @@
 # Welcome
 
-* For drone light show designer documentation visit [Designer](/designer).
-* For ground station software documentation visit [GCS](/gcs).
-* For how to setup a drone show visit [Drone Show Setup](/setup).
-* For troubleshooting of the Drone light show system [Troubleshooting](/troubleshooting).
-* For Mazzy Star Drone details visit [vimdrones.com](https://vimdrones.com).
+* For Drone Light Show Designer documentation visit [Designer](/designer).
+* For Ground Station Software documentation visit [GCS](/gcs).
+* For how to setup a drone light show visit [Drone Light Show Setup](/setup).
+* For troubleshooting of the Drone Light Show System visit [Troubleshooting](/troubleshooting).
+* For Vimdrones official website visit [vimdrones.com](https://vimdrones.com).
