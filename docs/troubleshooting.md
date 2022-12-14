@@ -105,7 +105,7 @@ For example, as RT-AC86U, please refer to the user manual for other models. To e
 
 ----
 
-## Drone makes circling when take off
+## Drone circling after taking off
 
 If the drone flies in circles, please perform Magnetic calibration after landed. 
 
