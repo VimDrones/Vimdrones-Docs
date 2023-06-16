@@ -40,10 +40,10 @@ We suggest you using use the Method I.
 When power on the drone, we could hear a beep (normal) sound but no light. The drone is not online in the GCS.
 
 
-- Please try to replug the SD card. SD card might be loose when in the transport.  
+- Please pull out the battery and replug the SD card. SD card might be loose when in the transport.  
 - If it is still not working. Please change an SD card that works well in another drone. If the drone is online,  the SD card might be broken. Please make a new SD card and plug it into this drone.
-- If check if the WIFI SSID and Password of the SD card match the router. 
-- If check if more than 50 drones or devices connect to the same router, which reaches the limit devices. 
+- Please check if the WIFI SSID and Password of the SD card match the router. 
+- Please check if the number of devices that can be connected to the router is exceeded. 
 
 
 -----
@@ -55,6 +55,8 @@ Some drones upload the design project fail and keep white flashing.
 ![Ground Station Interface](/static/gcs-project-update.jpeg "Ground Station Interface")
 - Or please select the drone that upload fails and click the upload button in the Drone Dashboard. When upload success, the color of token number will become green. 
 - Please check the Wifi Rssi of the drone that upload fail.  If the Received Signal is week,  please jump to the troubleshooting of [Wifi Signal](https://docs.vimdrones.com/troubleshooting/#wifi-signal-is-weak-wifi-channel-sometimes-turns-off).  
+- Please check if the drone has the IP address. If no IP address, please contact us for technical support.  
+
 
 **Note:** We could check the upload state in the OverView Panel.   
 Token Fail means the drone'project upload fail or Empty.  
@@ -157,3 +159,8 @@ Compass calibration through QGroundControl software
 ![QGroundControl](/static/qgc-mag-1.jpeg "QGroundControl")
 3. Rotate the drone along 3 axes, and finish random rotating at last till progress bar finished. Calibration result should be green, which means a GOOD result. Reboot the drone to finish calibration.  
 ![QGroundControl](/static/qgc-mag-2.jpeg "QGroundControl")
+
+
+## Others
+If there are any other questions, please contact us for technical support.   
+[Get in Touch](https://vimdrones.com/en/contact)

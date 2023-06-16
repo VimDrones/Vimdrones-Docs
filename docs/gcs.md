@@ -5,7 +5,7 @@ Vimdrones GCS is easy to use with an efficient dashboard that displays the real-
 It also features intuitive 2D and 3D views that are more intuitive to observe the position of the drone in real time. Moreover, it supports the addition of music & video, which can be played synchronously with the light show.   
 Vimdrones GCS makes it easier to ly a brighten up drone show in just when you get it!         
 
-![Ground Station Introduction](/static/gcs.jpeg "Ground Station Introduction")  
+![Ground Station Introduction](/static/gcs.png "Ground Station Introduction")  
 
 **Feature Highlights**
 
@@ -23,11 +23,13 @@ Vimdrones GCS makes it easier to ly a brighten up drone show in just when you ge
 
 **System requirements**
 
-* Operating system: Windows 10; Mac OS
-* CPU: Intel Core i5 or better
-* Memory: Minimum 8 GB of RAM or more
-* Hard drive: SSD 120 GB. Recommended 256GB or more
-* Network: TCP/IPv4 network stack, WiFi or Ethernet. Recommended Ethernet
+* Operating system: Windows 10/11; Mac OS
+* CPU: Intel Core i7 or better.
+* Memory: Minimum 8 GB of RAM or more.
+* Hard drive: SSD 120GB. Recommended 256GB or more.
+* Graphics hardware: Graphics card
+* Network: TCP/IPv4 network stack, WiFi, or Ethernet. Recommended Ethernet.
+* Screen resolution: Full HD screen
 
 **Hardware requirements**
 
@@ -53,7 +55,10 @@ Install Vimdrones GCS on your computer, Mac OS or Windows
 * Double click the icon to open the Vimdrones GCS
 ![Installation Mac](/static/installation-gcs-mac.jpg "Installation Mac")
 
+
+
 ## Adding new Mazzy Star Drone™ to the system
+
 By default the system shipped with pre config Mazzy Star Drone™, when you bought new Mazzy Star Drone™ in later orders to extend the business show scale, you will need to follow these steps to add it to current system.
 
 **Prepare**
@@ -84,14 +89,10 @@ By default the system shipped with pre config Mazzy Star Drone™, when you boug
 * Insert SD card back to the drone
 * Power up the drone, click **Radio Pair** button in Base panel and get "Drone X radio Pair Success" Notification
 
-## Interface 
+
+## Grid View
 
 ![Ground Station Interface](/static/gsc-interface-before-takeoff.png "Ground Station Interface") 
-
-
-**Drone Grid**
-
-![Ground Station Interface](/static/gcs-grid.jpeg "Ground Station Interface")
 
 * Top left number: Drone ID
 * Top right number: Satellite Count
@@ -107,9 +108,34 @@ By default the system shipped with pre config Mazzy Star Drone™, when you boug
     * Green: Ready to fly 
     * Gay: The drone offline  
 
----
 
-**RTK Base Status**
+
+
+## Map view  
+ 
+Click **Map** icon to view the real-time 2D position of the drones and the RTK base.  
+
+![RealTime 2D position view](/static/gcs-map.png "RealTime D position view")
+When you click the drone icon in the map, it will show this drone's status in the Dashboard   
+
+* Top left number: Drone ID  
+* Top right number: Satellite Count  
+* Middle arrow: Drone head towards  
+* Button bar: Battery Voltage   
+    * High -> Low: Green -> Orange -> Red 
+
+
+## List View
+
+Click **List** icon to view all drones' Status in list 
+
+![Ground Station Interface](/static/gcs-list.jpeg "Ground Station Interface")
+
+* A green dot in the drone column means the drone online, a red dot means offline
+
+
+
+## RTK Base Status
 
 ![Ground Station Interface](/static/gcs-rtk-base.jpeg "Ground Station Interface")
 
@@ -147,8 +173,25 @@ By default the system shipped with pre config Mazzy Star Drone™, when you boug
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kf0B2HTYmLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
------
-**Drone Dashboard**
+----
+
+## Overview
+
+![Ground Station Interface](/static/gcs-overview.jpeg "Ground Station Interface")
+
+Issue Fail: Drone Quantity —> Drone ID
+
+* **Online**: The quantity of drones online
+* **RTCM Link Fail**: The drone loss the RTCM.
+* **PreArm Fail**: The drone fail to PreArm(takeoff). Please check LOG system of the drone. 
+* **Token Fail**: The drone'project upload fail or Empty. Please try to upload(skip success) again.   
+* **RTK Fail**: The drone is not RTK fixed yet. Please wait for RTK fixed.   
+* **Set Home Fail**: The drone set home unsuccessful. Please set home again.   
+
+
+
+
+## Drone Dashboard
 
 ![Ground Station Interface](/static/gcs-drone-status.jpeg "Ground Station Interface")
 
@@ -194,7 +237,7 @@ Poor -> Good: Red -> Orange -> Green
 * **Mode**: False -> Ready  (It should be **Ready** when the drone online)   
 * **Arming**: False -> Ready  (It should be **Ready** when the drone online)   
 * **Wifi Channel**: OFF/ON   (It should be **ON** when the drone online)   
-* **Radio Channel**: OFF/ON  (It should be **ON** when the drone online)   
+* **Radio Return**: IDLE/ACTIVE  (It should be **IDLE** when the wifi is working, or it will be radio **ACTIVE**)   
 
 
 **Drone Status**  
@@ -247,8 +290,7 @@ If the token number is green, it means the drone's Trajectory matches the Projec
 
 
 
----
-**Project**
+## Project
 
 ![Ground Station Interface](/static/gcs-project.jpeg "Ground Station Interface")
 
@@ -277,8 +319,8 @@ If the token number is green, it means the drone's Trajectory matches the Projec
 * You could also open a media file (.mp3 / .mp4) in the from other file.   
 
 
----
-**Set Home**
+
+## Set Home 
 
 ![Ground Station Interface](/static/gcs-set-home.jpeg "Ground Station Interface")
 
@@ -293,17 +335,17 @@ If the token number is green, it means the drone's Trajectory matches the Projec
 
 **Note**: In general, the drone chosen as copy from home should correspond to the position of the world origin [x, y, z(0, 0, 0)] in Blender.
 
----
 
-**Log System**
+
+## Log System
 
 ![Ground Station Interface](/static/gcs-log-drone.jpeg "Ground Station Interface")
 
 * When deselect the drone, it shows the drone's log system.   
 * When deselect the drone, it shows all drones log system. 
 
----
-**LED Control**
+
+## LED Control
 
 ![Ground Station Interface](/static/gcs-led.jpeg "Ground Station Interface")
 
@@ -319,39 +361,42 @@ We could control the drone LED realtime when having the drone light show.
 3. **Flash**: The LED regularly on and off  
 4. **Quick**: The LED flash fast 
 
----
 
-**Group Control**  
+
+## Group Control 
 
 ![Ground Station Interface](/static/gcs-group-control.jpeg "Ground Station Interface")  
 
 * **Reboot All**: Reboot all the drones
 * **Land**: The drone will automatically land vertically and slowly at the current position (do not click it unless you know what it is!)
 
----
 
-**Takeoff Control**  
+
+## Takeoff Control
 
 ![Ground Station Interface](/static/gcs-takeoff.jpeg "Ground Station Interface")  
   
-* **Turn On**: Click the time to set the takeoff time, then click the **Turn On** button to finish the setting. The **Turn On** button will change to **Turn OFF** button, you could click it to shut down the countdown setting.  
-* **Takeoff**: When everything id Ok, Click the **Takeoff** button to begin your drone light show
+* **Takeoff**: When everything is Ok, Click the **Takeoff** button to begin your drone light show
+
+
+**Takeoff Countdown**  
+
+* Click the time to set the takeoff time
+* Click the **Turn On** button, then it begin to countdown. Drones will takeoff when reach the set time
+    * If the set time is less than now, it will give you a notice.
+    * You could **Turn Off** the countdown before the set time to takeoff 
+
+![Takeoff Countdown Setup](/static/coundown-setup.png "Takeoff Countdown Setup")
+
+**Operation Video**
+
+* [YouTube](https://youtu.be/nBi81nieGS8)
+* [bilibili](https://www.bilibili.com/video/av87958242/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nBi81nieGS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ----
-**Overview**  
-
-![Ground Station Interface](/static/gcs-overview.jpeg "Ground Station Interface")
-
-Issue Fail: Drone Quantity —> Drone ID
-
-* **Online**: The quantity of drones online
-* **RTCM Link Fail**: The drone loss the RTCM.
-* **PreArm Fail**: The drone fail to PreArm(takeoff). Please check LOG system of the drone. 
-* **Token Fail**: The drone'project upload fail or Empty. Please try to upload(skip success) again.   
-* **RTK Fail**: The drone is not RTK fixed yet. Please wait for RTK fixed.   
-* **Set Home Fail**: The drone set home unsuccessful. Please set home again.   
-
-
 
 ## Settings
 
@@ -366,24 +411,10 @@ Issue Fail: Drone Quantity —> Drone ID
 * **RTK Settings**  
 The RTK base needs to reach the Min During Time(s) and Min Acc(m) could Survey in (success).  
 
----
-
-## Real-time  2D position view  
  
-Click **Map** icon to view the real-time 2D position of the drones and the RTK base.  
-
-![RealTime 2D position view](/static/gcs-map.png "RealTime D position view")
-When you click the drone icon in the map, it will show this drone's status in the Dashboard   
-
-* Top left number: Drone ID  
-* Top right number: Satellite Count  
-* Middle arrow: Drone head towards  
-* Button bar: Battery Voltage   
-    * High -> Low: Green -> Orange -> Red 
 
 
----
-## Real-time 3D position view  
+## 3D Map view  
 
 Click **3D** to view drone's real time 3D position. 
 
@@ -391,17 +422,63 @@ Click **3D** to view drone's real time 3D position.
 
 
 
-## Takeoff Countdown 
-* Click the time In the lower right corner, set the takeoff time
-* Click the **Turn On** button, then it begin to countdown. Drones will takeoff when reach the set time
-    * If the set time is less than now, it will give you a notice.
-    * You could **Turn Off** the countdown before the set time to takeoff 
+-------
 
-![Takeoff Countdown Setup](/static/coundown-setup.png "Takeoff Countdown Setup")
+## Tools
 
-**Operation Video**
+**Team Control**   
 
-* [YouTube](https://youtu.be/nBi81nieGS8)
-* [bilibili](https://www.bilibili.com/video/av87958242/)
+We could realtime control the drones to Pause, Continue or Move in the GCS software.    
+**Tool** -> **Team Control**   
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nBi81nieGS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![Ground Station Interface](/static/gcs-team-control.png "Ground Station Interface") 
+
+* **Purse**: Purse the show
+* **Continue**: Continue the show (make sure that the the value should be 0 in the North, East and Up columns)
+* **Move**: Move all drones according the value of North, East and Up columns
+
+**Note:**   
+
+  * A value that is negative indicates the opposite direction. For example, if you enter 5 in the North column and click the Move button, all drones will move 5 meters to the north; if you enter -5, all drones will move 5 meters to the south   
+  * Please note that when performing **Team Control** operations, there will be a delay in execution.
+
+----
+
+**Firmware Manager**  
+
+We could though the **Firmware Manager** Tool to manage and the version of the drone.  
+
+![Ground Station Interface](/static/gcs-firmware.jpeg "Ground Station Interface")  
+
+* **Version**: drone control system version
+* **FC Version**: flight control version
+
+
+**How to update the firmware of Mazzy Star Drone?**
+
+Before the update, please set up the router and the RTK base. Connected to router's Wi-Fi of your computer. Open the GCS and wait for the connect with the RTK base. You could do this work indoor.
+
+* Power on the drone(s) and wait the drone(s) online.
+* Open **Tool** -> **Firmware Manager** in Vimdrones GCS.
+![Ground Station Interface](/static/MSD-update.png "Ground Station Interface")  
+</br>
+
+1. 1.Click **Select** to choose the **update.bin** file 
+2. 2.Click **Get Version** of the drone(s)
+3. 3.Click **Update all** or **Update** Button, the drone(s) will flash white light. 
+4. After the drone update and reboot, please click **Get Version** and confirm the new version of drone(s)   
+![Ground Station Interface](/static/MSD-update-2.png "Ground Station Interface") 
+
+
+---
+
+**Update RTK Base**
+
+Before the update, please set up the router and the RTK base. Connected to router's Wi-Fi of your computer. Open the GCS and wait for the connect with the RTK base. You could do this work indoor.
+
+* Open **Tool** → **Update RTK Base** in Vimdrones GCS.
+![Ground Station Interface](/static/rtk-1.png "Ground Station Interface")  
+* Select the file: vimdrones_light_show_base
+![Ground Station Interface](/static/rtk-2.png "Ground Station Interface")        
+* Click the Upload button and finish the update. Please Reboot the RTK base.  
+![Ground Station Interface](/static/rtk-3.png "Ground Station Interface")  
