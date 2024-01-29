@@ -435,20 +435,20 @@ This Function enables the drones to keep the effector color even when the effect
 **Example 1:**
 
 * Select all drones. Add a keyframe to all drones with a color, for example, “Black”
-![Vimdrones Designer Effector](/static/designer-keep effect-1.png "Vimdrones Designer Effector") <br>
+![Vimdrones Designer Effector](/static/designer-keep-effect-1.png "Vimdrones Designer Effector")
 
 * Add a Cube to the effectors collection and make a “z” animation. In the Material Properties, add a base color to the cube. The drone will have the effector color only when it intersects with the cube.
-![Vimdrones Designer Effector](/static/designer-keep effect-2.jpg "Vimdrones Designer Effector") 
+![Vimdrones Designer Effector](/static/designer-keep-effect-2.jpg "Vimdrones Designer Effector") 
 
 * Click Date Properties, and make a “✓” with the keep_effect. Play the animation, the drone will leave color traces when the effector cube passes by.
-![Vimdrones Designer Effector](/static/designer-keep effect-3.jpg "Vimdrones Designer Effector") 
+![Vimdrones Designer Effector](/static/designer-keep-effect-3.jpg "Vimdrones Designer Effector") 
 
 * Set the keyframes Keep effect and not Keep effect. Right-click on the box to select Insect Keyframe, or Press “I”
-![Vimdrones Designer Effector](/static/designer-keep effect-4.jpg "Vimdrones Designer Effector") 
+![Vimdrones Designer Effector](/static/designer-keep-effect-4.jpg "Vimdrones Designer Effector") 
 
 * If we set a value for effect delay frames, for example 150, that means the drone will keep the color when the effector cube passes by for 150 frames, and then it will change the current color of the effector cube.
- ![Vimdrones Designer Effector](/static/designer-keep effect-5.jpg "Vimdrones Designer Effector")   
- ![Vimdrones Designer Effector](/static/designer-keep effect-6.jpg "Vimdrones Designer Effector") 
+ ![Vimdrones Designer Effector](/static/designer-keep-effect-5.jpg "Vimdrones Designer Effector")   
+ ![Vimdrones Designer Effector](/static/designer-keep-effect-6.jpg "Vimdrones Designer Effector") 
 
 
 **Example 2:** 
