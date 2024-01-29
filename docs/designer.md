@@ -386,12 +386,12 @@ In the 3D Viewport, select Menu Bar **Add** -> **Object** -> **Parent** -> **Obj
 * [YouTube](https://youtu.be/e1_7dmeRi2c)  
 * [bilibili](https://www.bilibili.com/video/av88166427/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e1_7dmeRi2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e1_7dmeRi2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+---
 
 
-
-
-**Set the Effector LED Type**  
+**Set the Effector LED Type**
 
 * What are the types of the Effector LED?
     * DEFAULT: one color
@@ -429,30 +429,97 @@ In the 3D Viewport, select Menu Bar **Add** -> **Object** -> **Parent** -> **Obj
 
 
 
+## Keep Effect 
+This Function enables the drones to keep the effector color even when the effector object has been passed by. So we can use this function to draw a picture or write some words.
+
+**Example 1:**
+
+* Select all drones. Add a keyframe to all drones with a color, for example, “Black”
+![Vimdrones Designer Effector](/static/designer-keep effect-1.png "Vimdrones Designer Effector") <br>
+
+* Add a Cube to the effectors collection and make a “z” animation. In the Material Properties, add a base color to the cube. The drone will have the effector color only when it intersects with the cube.
+![Vimdrones Designer Effector](/static/designer-keep effect-2.jpg "Vimdrones Designer Effector") 
+
+* Click Date Properties, and make a “✓” with the keep_effect. Play the animation, the drone will leave color traces when the effector cube passes by.
+![Vimdrones Designer Effector](/static/designer-keep effect-3.jpg "Vimdrones Designer Effector") 
+
+* Set the keyframes Keep effect and not Keep effect. Right-click on the box to select Insect Keyframe, or Press “I”
+![Vimdrones Designer Effector](/static/designer-keep effect-4.jpg "Vimdrones Designer Effector") 
+
+* If we set a value for effect delay frames, for example 150, that means the drone will keep the color when the effector cube passes by for 150 frames, and then it will change the current color of the effector cube.
+ ![Vimdrones Designer Effector](/static/designer-keep effect-5.jpg "Vimdrones Designer Effector")   
+ ![Vimdrones Designer Effector](/static/designer-keep effect-6.jpg "Vimdrones Designer Effector") 
 
 
+**Example 2:** 
+
+* [YouTube](https://youtu.be/0C0PEpq1eSQ?si=wkDAlD4zPyEz6csB)  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0C0PEpq1eSQ?si=wkDAlD4zPyEz6csB" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+
+----
+
+**Pay Attention:**
+
+1. The effector object cannot move too fast, otherwise the color may not be displayed correctly after passing by the drone.
+2. Moving the timeline, colors are not displayed correctly. Please play animation at the start frame.
+3. The effector object can’t add two Material colors with the effector linear function.
+4. Please pay attention that the effector should be moved away or disappear after the scene. So it could not affect the other formation.
+5. If there isn't have the Check box with the Keep_Effect, please input "1" means open the Keep_Effect, input "0" to turnoff the Keep_Effect.
 
 
 ## Flight Check
 
-* **Vehicle** -> **Flight Check**, make a "√" in from of the **enable**  
-![Vimdrones Designer Drone Flight Check](/static/flight-check.jpg "Vimdrones Designer Drone Flight Check") 
+**Vehicle** -> **Flight Check**, make a "√" in from of the **enable**  
+![Vimdrones Designer Drone Flight Check](/static/flight-check-safety-check.jpg "Vimdrones Designer Drone Flight Check") 
+
+**Safety Check**
+
+* When we open a project, there is a Safety Check collection.   
+* We could set the value of the distance Limit, horizontal speed limit and vertical speed limit. 
+* Play the animation, if the drone's distance and speed reach the limit, it will appear empty object(s) of this drone.  
+
+![Vimdrones Designer Drone Flight Check](/static/flight-check-safety-check-figure.jpg "Vimdrones Designer Drone Flight Check")
+
+**Empty Sphere:** Reach Distance Limit   
+(The dimension of the sphere is same as the distance limit value)  
+**Empty horizon Cone:** Reach Horizontal Speed Limit  
+**Empty vertical Cone:** Reach Vertical Speed Limit    
+
+* If we want to know the drones' specify value details of the distance and speed, we could open the **Console**
+
+**Console**
 
 * Open **Vimdrones Designer**, Click **CONSOLE**, open the **Vimdrones Designer Console**
 
-* we could set the Distance Limit, Speed Limit, Horizon Speed Limit, Vertical Speed Limit and Chart Duration, then click the **Update Settings** Button
+* We could set the Distance Limit, Speed Limit, Horizon Speed Limit, Vertical Speed Limit and Chart Duration, then click the **Update Settings** Button
 
 * Play the animation in Blender, we will see those Limits realtime. When the value reach the Limits, it will appears in the window. It shows that two drones reach the limit at that frame  
 When we don't need those information, we could click the **Clear** Button
-![Vimdrones Designer Console](/static/designer-console.png "Vimdrones Designer Console") 
+![Vimdrones Designer Console](/static/designer-console.jpg "Vimdrones Designer Console") 
 
 ---
-* Open the console when you do the design and check the speed and distance real time. So you can adjust the speed and distance at any time based on the feedback from the console
 
-* If the distance is larger, the formation looks more stable. If the distance is close, the airflow generated by the drone will affect each other. 
+**What to do when the drone reach the distance and speed limit?**   
 
-* When we change the Interpolation Mode of the F-curve, it wil effect the speed and distance of the drones.
+* Try to make the material figure larger if the drone reaches the distance limit. 
+* Try to swap the positions of two vertices if the two drones will go cross to each other. See [Manual Swap](https://docs.vimdrones.com/designer/#manual-swap)        
+* Try to avoid converting the horizontal formation to the vertical formation, or vertical formation to horizontal formation.     
+* Adjust the keyframe of the drone.   
+
+**What to do when the drone reach the speed limit?**   
+
+* Try to extend the time of the transform.    
+* Try to change the Interpolation Mode of the F-curve, it wil also effect the distance of the drones.  
 ![Vimdrones Designer Console](/static/blender-F-curve.png "Vimdrones Designer Console") 
+
+**Note:**
+
+* Open the Console and Safety Check when you do the design and check the speed and distance real time. So you can adjust the speed and distance at any time based on the feedback from the Console and Safety Check
+
+* If the distance is larger, the formation looks more stable. If the distance is close, the airflow generated by the drone will affect each other. It is recommended that the distance between two drones be 3 meters or more of the formation figure.
+
 
 
 **Operation Video** 
@@ -481,12 +548,14 @@ We could use the **Manual Swap** function to quickly handle two drones reaching 
 
 ![Vimdrones Designer Formation](/static/manual-swap.jpeg "Vimdrones Designer Formation") 
 
-After swapping the two drones, they don't reach the distance limit in the console
+* After swapping the two drones, they don't reach the distance limit in the console
 
 ![Vimdrones Designer Console](/static/console-summary-2.jpeg "Vimdrones Designer Console") 
 
 **Pay Attention!**  
-If the position of the drones are swapped in the middle formation, the positions of the two drones in the subsequent formation will also be swapped, which may cause a collision or reach the distance limit, so the subsequent formation needs to be re-detected in the console.
+
+* If the position of the drones are swapped in the middle formation, the positions of the two drones in the subsequent formation will also be swapped, which may cause a collision or reach the distance limit, so the subsequent formation needs to be re-detected in the console.  
+* Manual Swap cannot swap the two drones' colors, only change their positions. Please confirm that there is no problem with the transformation before adding colors.
 
 
 ## Export Animation
@@ -547,7 +616,8 @@ How to add your system to the list? Please [contact us](https://vimdrones.com/co
 4. Add animation to the Material Objects
 5. Have a Flight check to the animation
 6. Add color & effector to the drones
-7. Adjust the End frame to the frame when drones land 
+7. Adjust the End frame to the frame when drones land   
+(If you want the drones to keep the LED lights on after landing, you can add colors to the drone team to warm up the scene. Please extend the End frame of the design project.)
 8. Export the Drone Light Show data
 
 
@@ -584,11 +654,11 @@ Render must uncheck **Lock Interface**. Do not export the files when rendering.
 * Make a “√” in front of the Add-on 
 * Check the ‘Add Stroke Font Text’ option in the add-ons dialog  
 
-**Note:** Please use Blender2.80 or 2.81
+**Note:** Please use Blender 2.8 series
 
 **Add line font text**
 
-* Add a Mesh
+* Add a **Curve**
 * Select ‘Add Input Text’ option in the ‘Action’ drop-down
 * Input the text to be rendered in the text box
 * Select the font

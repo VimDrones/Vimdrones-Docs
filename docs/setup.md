@@ -143,7 +143,9 @@ It's not recommended to fly drones in rain, mist, high humidity, or over water b
 6. Place the Remote Controller (as the Backup System)
 
 **Pay attention**   
-Please first power the wifi router, then turn on the RTK Base. It will make sure the GCS works properly on the computer.
+
+* Please first power the wifi router, then turn on the RTK Base. It will make sure the GCS works properly on the computer. 
+* The RTK base station cannot be moved after survey in success, otherwise you need to survey in again. 
 
 ![Drone Light Show System](/static/drone-light-show-system-communication-diagram-2.jpg "Drone Light Show System") 
 
@@ -242,11 +244,14 @@ When change in Z Axis Rotate in Vimdrones Designer(Real world layout)
 
 
 ## Post-Flight Setup Procedure
-* Unplug the batteries of the drones to the package. **No need to fully charge the battery until the next flight**
+* Unplug the batteries of the drones to the package. **No need to fully charge the battery until the next flight**  
+
 * Put the drones into the packages, then stack up the packages and tie them up with a buckle
 * Pack up the Drone Light Show System into the package
 * Pack up the remaining equipment
 
+**Pay attention!**    
+The battery should not be stored in fully charged condition. Otherwise the battery is easily damaged
 
 
 ## Remote Control

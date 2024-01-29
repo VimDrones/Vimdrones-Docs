@@ -93,13 +93,16 @@ Please connect the right port of the drone to the PC with a micro USB cable. Ope
 
 When the drone’s Received Signal is weak or Wifi channel sometimes turns OFF, you can refer to the following steps.   
 
-* Adjust the distance of the router to the dronesIt is recommended that adjust the placement of the router is close to the drones. Shorten the distance between the router and drones, to avoid the distance of the signal transmission affecting the strength of the signal.  
+* Adjust the distance of the router to the drones.  
+It is recommended that adjust the placement of the router is close to the drones. Shorten the distance between the router and drones, to avoid the distance of the signal transmission affecting the strength of the signal.  
 
-* Adjust the direction of the router's antennasPlease try adjusting the angle of the external antenna (e.g. 45 degrees, 90 degrees, etc.) to the optimal signal distance.   
+* Adjust the direction of the router's antennas.    
+Please try adjusting the angle of the external antenna (e.g. 45 degrees, 90 degrees, etc.) to the optimal signal distance.   
 For example, as RT-AC86U, please refer to the user manual for other models. To ensure the best Wifi signal, set the antennas as below suggested image  
 ![Router](/static/router-antenna.jpeg "Router") 
 
-* Avoid interference or barriers affecting the wifi signal around the routerAvoid putting the router next to the power bank.It is recommended to place the router in the center of the drones where possible in an open area, not on the ground.  
+* Avoid interference or barriers affecting the wifi signal around the router.  
+Avoid putting the router next to the power bank.It is recommended to place the router in the center of the drones where possible in an open area, not on the ground.  
 
 * Check and update the Firmware Version of the router.  
 
@@ -161,6 +164,6 @@ Compass calibration through QGroundControl software
 ![QGroundControl](/static/qgc-mag-2.jpeg "QGroundControl")
 
 
-## Others
+## Contact
 If there are any other questions, please contact us for technical support.   
 [Get in Touch](https://vimdrones.com/en/contact)
